@@ -1,6 +1,5 @@
 import React from 'react'
 import Landing from './components/index/landing'
-import AboutUs from './components/aboutUs/aboutUs'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 
@@ -10,7 +9,6 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Landing />} />
-        <Route path="/about" element={<AboutUs />} />
       </Routes>
     </BrowserRouter>
   )
