@@ -1,119 +1,34 @@
 import React, { useState } from 'react';
-import { Menu, Button, Drawer } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
-import { Link } from 'react-router-dom';    
+import { ThreeLineHorizontal, Cross } from 'akar-icons';
+import './navbar.css';
 
 const Navbar = () => {
-  const [visible, setVisible] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const showDrawer = () => {
-    setVisible(true);
-  };
-
-  const onClose = () => {
-    setVisible(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
-    <div className="navbar">
-      <div className="logo">
-        <Link to="/">Mind</Link>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-logo">
+          <img src="/images/45+.png" alt="Logo" />
+        </div>
+        <div className="menu-toggle" onClick={toggleMenu}>
+          {menuOpen ? <Cross size={24} color='white' /> : <ThreeLineHorizontal strokeWidth={2} size={36} color='white' />}
+        </div>
+        <ul className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
+          <li className="navbar-item"><a href="#inicio">Inicio</a></li>
+          <li className="navbar-item"><a href="#nosotros">Nosotros</a></li>
+          <li className="navbar-item"><a href="#servicios">Servicios</a></li>
+          <li className="navbar-item"><a href="#diseno">Diseño</a></li>
+          <li className="navbar-item"><a href="#politica-calidad">Política de calidad</a></li>
+          <li className="navbar-item"><a href="#proyectos">Proyectos</a></li>
+          <li className="navbar-item"><a href="#contactenos" className="contact-button">Contáctenos</a></li>
+        </ul>
       </div>
-      <div className="menuSection">
-        <Button
-          className="menuButton"
-          type="primary"
-          onClick={showDrawer}
-          icon={<MenuOutlined />}
-        />
-        <Drawer
-          title="Menu"
-          placement="right"
-          onClose={onClose}
-          visible={visible}
-        >
-          <Menu mode="vertical" className="drawerMenu">
-            <Menu.Item key="home">
-              <Link to="/">Home</Link>
-            </Menu.Item>
-            <Menu.Item key="about">
-              <Link to="/about">About</Link>
-            </Menu.Item>
-            <Menu.Item key="contact">
-              <Link to="/contact">Contact</Link>
-            </Menu.Item>
-          </Menu>
-        </Drawer>
-        <Menu mode="horizontal" className="desktopMenu">
-          <Menu.Item key="home">
-            <Link to="/">Home</Link>
-          </Menu.Item>
-          <Menu.Item key="about">
-            <Link to="/about">About</Link>
-          </Menu.Item>
-          <Menu.Item key="contact">
-            <Link to="/contact">Contact</Link>
-          </Menu.Item>
-        </Menu>
-      </div>
-      <style jsx>{`
-        .navbar {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          padding: 10px 20px;
-          background-color: #001529;
-          color: #fff;
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-          position: sticky;
-          top: 0;
-          z-index: 1000;
-        }
-        .logo a {
-          color: #fff;
-          font-size: 24px;
-          font-weight: bold;
-          text-decoration: none;
-        }
-        .menuSection {
-          display: flex;
-          align-items: center;
-        }
-        .menuButton {
-          display: none;
-        }
-        .desktopMenu {
-          display: flex;
-          background: none;
-          border-bottom: none;
-        }
-        .desktopMenu .ant-menu-item {
-          margin: 0 15px;
-        }
-        .desktopMenu .ant-menu-item a {
-          color: #fff;
-          font-size: 16px;
-          font-weight: 500;
-        }
-        .desktopMenu .ant-menu-item a:hover {
-          color: #1890ff;
-        }
-        .drawerMenu .ant-menu-item a {
-          color: #001529;
-          font-size: 16px;
-          font-weight: 500;
-        }
-        @media (max-width: 768px) {
-          .menuButton {
-            display: inline-block;
-          }
-          .desktopMenu {
-            display: none;
-          }
-        }
-      `}</style>
-      
-    </div>
+    </nav>
   );
 };
 
