@@ -1,0 +1,39 @@
+.descripcion,
+.section {
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    color: white;
+}
+
+.descripcion {
+    display: flex;
+    justify-content: space-between;
+    background-color: #006278;
+}
+
+.section {
+    flex: 1;
+    margin: 0 8px;
+}
+
+.section h2 {
+    font-size: 30px;
+}
+
+.section p {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .descripcion {
+        flex-direction: column;
+    }
+
+    .section {
+        margin: 8px;
+        flex-basis: auto;
+    }
+}
+
