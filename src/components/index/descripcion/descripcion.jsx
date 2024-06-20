@@ -7,19 +7,15 @@ const Descripcion = () => {
     <div>
 
         <div className="calidad">
+
             <div className="calidad_descripcion">
                 <Pencil size={40} />
                 <h2>Calidad</h2>
                 <p>Nuestro sistema de gestión de la calidad está certificado según la ISO 9001:2015 por Bureau Veritas Certification.</p>
             </div>
             <div className="calidad_imagenes">
-                <div>
-                    <img src="imagenes/Logo-Mind.png" alt="Mind"/>
-                </div>
-                <div>
-                    <img src="imagenes/Certificacion-Veritas.jpeg" alt="Certificación BUREAU VERITAS"/>
-                </div>
-                
+                <img class="imagen" src="imagenes/Logo-Mind.png" alt="Mind"/>
+                <img class="imagen" src="imagenes/Certificacion-Veritas.jpeg" alt="Certificación BUREAU VERITAS"/>
             </div>
             
         </div>
