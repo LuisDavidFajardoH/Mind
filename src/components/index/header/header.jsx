@@ -11,15 +11,11 @@ const Header = () => {
         </video>
       </div>
       <div className="content">
-        <h1>MIND</h1>
+        <h1>Mind</h1>
         <p>Metalmecánica Ingeniería Diseño</p>
         <button className="btn-primary">Contactanos</button>
       </div>
-      <div className="social-media">
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://facebook.com">Facebook</a>
-        <a href="https://linkedin.com">LinkedIn</a>
-      </div>
+      
     </header>
   );
 };
