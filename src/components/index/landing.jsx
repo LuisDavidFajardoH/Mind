@@ -9,6 +9,7 @@ const Landing = () => {
         <>
         <Navbar />
         <Header />
+        <Descripcion />
          
         </>
     );
