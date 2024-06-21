@@ -1,6 +1,10 @@
+.certificacion {
+    margin-top: 20px;
+    text-align: center;
+}
+
 .descripcion,
 .caracteristica {
-    padding: 16px;
     margin-bottom: 16px;
     text-align: center;
 }
@@ -27,7 +31,7 @@
 }
 
 .imagen1 {
-    width: 240px;
+    width: 250px;
 }
 
 @media (max-width: 768px) {

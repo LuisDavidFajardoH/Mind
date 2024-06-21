@@ -3,6 +3,7 @@ import React from 'react';
 import Navbar from '../navbar/navbar';
 import Header from './header/header';
 import Descripcion from './descripcion/descripcion';
+import Portafolio from './portafolio/portafolio';
 
 const Landing = () => {
     return (
@@ -10,7 +11,7 @@ const Landing = () => {
         <Navbar />
         <Header />
         <Descripcion />
-         
+        <Portafolio />
         </>
     );
     }
