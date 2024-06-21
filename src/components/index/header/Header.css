@@ -1,79 +1,121 @@
-/* Header.css */
-
 .header {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .video-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Asegura que el video esté detrás del contenido */
-  }
-  
-  .video-background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cubre toda el área del contenedor */
-  }
-  
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+.video-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cubre toda el área del contenedor */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%; /* Ajusta según sea necesario */
+}
+
+.content .header-text {
+  max-width: 70%; /* Ajusta según sea necesario */
+}
+
+.content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.content p {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.btn-primary {
+  background-color: #006278;
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn-primary:hover {
+  background-color: #666666;
+}
+
+.logo-background {
+  background-color: #00404eda;
+  border-radius: 10%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content; /* Ajusta el ancho del contenedor al contenido */
+  height: fit-content; /* Ajusta la altura del contenedor al contenido */
+}
+
+.logo {
+  height: 200px;
+  width: auto;
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
   .content {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
-    color: white;
-    z-index: 1;
-  }
-  
-  .content h1 {
-    font-size: 3em;
-    margin-bottom: 0.5em;
-  }
-  
-  .content p {
-    font-size: 1.5em;
-    margin-bottom: 1em;
-  }
-  
-  .btn-primary {
-    background-color: #006278;
-    color: white;
-    padding: 0.5em 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-  }
-  
-  .btn-primary:hover {
-    background-color: #666666;
-  }
-  
-  .social-media {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    display: flex;
     flex-direction: column;
-    color: white;
-    z-index: 1;
+    align-items: center;
+    text-align: center;
   }
-  
-  .social-media a {
-    margin: 0.5em 0;
-    text-decoration: none;
-    color: white;
-    font-size: 1em;
-    transition: color 0.3s;
+
+  .content .header-text {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
-  
-  .social-media a:hover {
-    color: #007bff;
+
+  .logo {
+    height: 150px;
   }
-  
+
+  .logo-background {
+    margin-top: 20px; /* Añade un margen superior para separar los elementos */
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 2em;
+  }
+
+  .content p {
+    font-size: 1.2em;
+  }
+
+  .btn-primary {
+    font-size: 0.9em;
+  }
+
+  .logo {
+    height: 100px;
+  }
+
+  .logo-background {
+    margin-top: 20px; /* Añade un margen superior para separar los elementos */
+  }
+}

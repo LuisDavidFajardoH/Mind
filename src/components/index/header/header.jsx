@@ -11,11 +11,15 @@ const Header = () => {
         </video>
       </div>
       <div className="content">
-        <h1>Mind</h1>
-        <p>Metalmecánica Ingeniería Diseño</p>
-        <button className="btn-primary">Contactanos</button>
+        <div className="header-text">
+          <h1>Mind</h1>
+          <p>Metalmecánica Ingeniería Diseño</p>
+          <button className="btn-primary">Contactanos</button>
+        </div>
+        <div className="logo-background">
+          <img src="/images/12.png" alt="Logo" className="logo" />
+        </div>
       </div>
-      
     </header>
   );
 };
