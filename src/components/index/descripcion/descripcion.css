@@ -1,33 +1,45 @@
-.certificacion {
-    margin-top: 20px;
-    text-align: center;
-}
-
+.ofrecemos,
 .descripcion,
 .caracteristica {
-    margin-bottom: 16px;
     text-align: center;
+    position: relative;
+}
+
+.ofrecemos {
+    margin-top: 100px;
+}
+
+.ofrecemos h2 {
+    font-size: 50px;
+    color: #303030;
 }
 
 .descripcion {
+    
     display: flex;
     justify-content: space-between;
+    margin: 0 10% 10%;
+    margin-bottom: 20px;
 }
 
 .caracteristica {
+    padding: 35px;
     flex: 1;
     margin: 0 12px;
     align-items: center;
+    border-radius: 8px;
+    border: 1px solid #ddd;
 }
 
 .caracteristica h2 {
-    font-size: 23px;
-    color: #006278;
+    font-size: 27px;
+    color: #303030;
 }
 
 .caracteristica p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
+    color: #63636b;
 }
 
 .imagen1 {
@@ -36,6 +48,7 @@
 
 @media (max-width: 768px) {
     .descripcion {
+        margin: 0 5% 5%;
         flex-direction: column;
     }
 
@@ -43,7 +56,5 @@
         margin: 8px;
         flex-basis: auto;
     }
-
 }
-
 
