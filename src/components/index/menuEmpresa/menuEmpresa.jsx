@@ -30,7 +30,7 @@ const Informacion = () => {
           <div key="vision">
             <h2>NUESTRA VISIÓN</h2>
             <p className='p2'>
-              Ser líderes en la industria metalmecánica, reconocidos por nuestra excelencia en el servicio y nuestro compromiso con el desarrollo sostenible y el bienestar de la comunidad.
+              Ser líderes en la industria metalmecánica,reconocidos por nuestra excelencia en el servicio y nuestro compromiso con el desarrollo sostenible y el bienestar de la comunidad.
             </p>
           </div>
         );
