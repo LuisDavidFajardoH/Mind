@@ -13,8 +13,8 @@ const Header = () => {
       <div className="content">
         <div className="header-text">
           <h1>Mind</h1>
-          <p>Metalmecánica Ingeniería Diseño</p>
-          <button className="btn-primary">Contactanos</button>
+          <p>Piezas de Metal, Piezas de Futuro</p>
+          <button className="btn-primary">Contáctanos</button>
         </div>
         <div className="logo-background">
           <img src="/images/12.png" alt="Logo" className="logo" />

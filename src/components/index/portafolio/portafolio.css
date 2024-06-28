@@ -1,47 +1,68 @@
-.proyectos {
-    text-align: center;
-    align-items: center;
+.portafolio-container {
+    padding: 40px 0;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 8px 100px;
-}
-
-.briefcase-button {
+    margin-top: 3%;
+  }
+  
+  .proyectos {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 20px;
+  }
+  
+  .briefcase-button-center {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .briefcase-button {
     background-color: #006278;
     color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
-    border: 1px solid #333;
+    border: none;
     transition: background-color 0.3s, color 0.3s;
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: center;
     font-size: 16px;
-}
-
-.briefcase-button-center {
-    display: flex;
-    justify-content: center;
-}
-
-.briefcase-button:hover {
-    background-color: #333;
-    color: #ffffff;
-}
-
-.proyectos h2 {
-    font-size: 23px;
+    cursor: pointer;
+  }
+  
+  .briefcase-button:hover {
+    background-color: #00404e;
+  }
+  
+  .proyectos h2 {
+    font-size: 24px;
     color: #006278;
-}
-
-.proyectos p {
+    margin-bottom: 20px;
+  }
+  
+  .proyectos p {
     font-size: 18px;
     line-height: 1.5;
-}
-
-@media (max-width: 768px) {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  @media (max-width: 768px) {
     .proyectos {
-        margin: 8px 20px;
-        flex-basis: auto;
+      margin: 20px;
     }
-}
+  
+    .proyectos h2 {
+      font-size: 20px;
+    }
+  
+    .proyectos p {
+      font-size: 16px;
+    }
+  
+    .briefcase-button {
+      font-size: 14px;
+    }
+  }
+  
