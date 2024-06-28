@@ -1,0 +1,123 @@
+/* Informacion.css */
+.informacion-container {
+  margin-top: 5%;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.tabs button {
+  background-color: #f0f0f0;
+  border: 2px solid #cfcfcf;
+  color: #006278;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+  margin: 0 10px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tabs button.active {
+  background-color: #006278;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.tabs button:hover {
+  background-color: #005060;
+  color: #ffffff;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.tab-content {
+  flex: 1;
+  text-align: left;
+  position: relative;
+}
+
+.tab-content-enter {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.tab-content-enter-active {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
+
+.tab-content-exit {
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+}
+
+.tab-content-exit-active {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+h2 {
+  color: #006278;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.p2 {
+  color: #333;
+  line-height: 1.8;
+  font-size: 18px;
+  max-width: 600px;
+  text-align: justify;
+}
+
+.content-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .tabs button {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-image {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    max-width: 100%;
+  }
+}
