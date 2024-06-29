@@ -5,6 +5,7 @@ import Header from './header/header';
 import Descripcion from './descripcion/descripcion';
 import Informacion from './menuEmpresa/menuEmpresa';
 import Portafolio from './portafolio/portafolio';
+import BotonWhatsapp from './boton-whatsapp/boton-whatsapp';
 
 const Landing = () => {
     return (
@@ -14,6 +15,7 @@ const Landing = () => {
         <Descripcion />
         <Informacion />
         <Portafolio />
+        <BotonWhatsapp />
         </>
     );
     }
