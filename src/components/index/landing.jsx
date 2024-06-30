@@ -6,6 +6,7 @@ import Descripcion from './descripcion/descripcion';
 import Informacion from './menuEmpresa/menuEmpresa';
 import Portafolio from './portafolio/portafolio';
 import BotonWhatsapp from './boton-whatsapp/boton-whatsapp';
+import Footer from './footer/footer';
 
 const Landing = () => {
     return (
@@ -16,6 +17,7 @@ const Landing = () => {
         <Informacion />
         <Portafolio />
         <BotonWhatsapp />
+        <Footer />
         </>
     );
     }
