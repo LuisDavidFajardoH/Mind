@@ -19,8 +19,8 @@ const Navbar = () => {
           {menuOpen ? <Cross size={24} color='white' /> : <ThreeLineHorizontal strokeWidth={2} size={36} color='white' />}
         </div>
         <ul className={`navbar-menu ${menuOpen ? 'open' : ''}`}>
-          <li className="navbar-item"><a href="#inicio">Inicio</a></li>
-          <li className="navbar-item"><a href="#nosotros">Nosotros</a></li>
+          <li className="navbar-item"><a href="/">Inicio</a></li>
+          <li className="navbar-item"><a href="/sobre-nosotros">Nosotros</a></li>
           <li className="navbar-item"><a href="#servicios">Servicios</a></li>
           <li className="navbar-item"><a href="#diseno">Diseño</a></li>
           <li className="navbar-item"><a href="#politica-calidad">Política de calidad</a></li>
