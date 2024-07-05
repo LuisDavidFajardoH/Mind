@@ -110,7 +110,8 @@ h2 {
   }
 
   .tab-content {
-    min-height: 490px;
+    min-height: 400px;
+    width: 100%;
   }
 
   .informacion-container {
@@ -123,7 +124,7 @@ h2 {
   }
 
   .content-image {
-    margin-top: -5%;
+    margin-top: -15%;
     width: 100%;
     max-width: 300px;
   }
@@ -136,5 +137,12 @@ h2 {
   p {
     font-size: 16px;
     max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .tab-content {
+    min-height: 590px;
+    width: 100%;
   }
 }
