@@ -1,10 +1,12 @@
 /* Container Styles */
 .container {
   text-align: center;
-  padding: 40px 20px;
-  background-color: #0c0e29;
+  margin-top: 2%;
+  padding: 50px 20px;
+  background-color: #ffffff;
   color: white;
   animation: fadeIn 1s ease-in-out;
+  min-height: 100vh;
 }
 
 @keyframes fadeIn {
@@ -14,76 +16,83 @@
 
 /* Title Styles */
 .title {
-  font-size: 2em;
-  margin-bottom: 20px;
-  color: #ac6ceb;
+  font-size: 2.5em;
+  margin-bottom: 1%;
+  color: #006278;
   position: relative;
   display: inline-block;
 }
 
 .title::after {
   content: '';
-  width: 50px;
-  height: 3px;
-  background-color: #ac6ceb;
+  width: 60px;
+  height: 4px;
+  background-color: #006278;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -8px;
+  bottom: -10px;
 }
 
 /* Service Container Styles */
 .service-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  gap: 30px;
+  margin-left: 25%;
+  margin-top: 3%;
+  justify-items: center;
+
 }
 
 /* Service Item Styles */
 .service-item {
-  flex: 1 1 200px;
-  margin: 15px;
-  padding: 20px;
-  color: #ac6ceb;
   position: relative;
-  transition: transform 0.3s;
+  padding: 15px;
+  color: #006278;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+  background: #292e2f;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 180px;
 }
 
 .service-item:hover {
   transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.service-item .icon {
-  width: 50px;
-  height: 50px;
+/* Icon Styles */
+.icon {
+  width: 40px;
+  height: 40px;
   margin-bottom: 10px;
   transition: transform 0.3s;
-  filter: invert(1);
 }
 
 .service-item:hover .icon {
   transform: scale(1.1);
 }
 
-.service-item .service-title {
+/* Service Title Styles */
+.service-title {
   font-size: 1.2em;
-  margin-bottom: 5px;
-  color: #ac6ceb;
+  margin-bottom: 8px;
+  color: #ffffff;
 }
 
-.service-item .service-description {
-  display: none;
-  position: absolute;
-  top: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  background-color: rgba(19, 25, 67, 0.95);
-  padding: 10px;
-  border-radius: 8px;
+/* Service Description Styles */
+.service-description {
+  font-size: 0.8em;
   color: #d4d4d4;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s, max-height 0.3s;
+  overflow: hidden;
 }
 
 .service-item:hover .service-description {
-  display: block;
+  opacity: 1;
+  max-height: 100px;
 }
