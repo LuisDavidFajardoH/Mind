@@ -12,7 +12,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: rgba(36, 33, 33, 0.719); /* Fondo blanco semi-transparente */
+    background-color:  #333; /* Color de fondo */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     z-index: 1000;
     font-family: 'Frutiger LT Pro', Arial, sans-serif; /* Usando la nueva fuente */

@@ -3,6 +3,7 @@ import "./SobreNosotros.css";
 import Navbar from "../navbar/navbar";
 import Footer from "../index/footer/footer";
 import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
+import { FaFileDownload } from "react-icons/fa"; // Importar íconos
 
 const SobreNosotros = () => {
   return (
@@ -46,15 +47,15 @@ const SobreNosotros = () => {
         <h2>REPORTE BIC</h2>
         <p>
           Para conocer más acerca de nuestro compromiso como Sociedad BIC, lo
-          invitamos a leer nuestro primer Reporte BIC. Click para descargar
+          invitamos a leer nuestro primer Reporte BIC. Haga clic para descargar
           reportes.
         </p>
         <div className="reporte-bic-buttons">
           <a href="/reporte-2022.pdf" download>
-            REPORTE 2022
+            <FaFileDownload /> REPORTE 2022
           </a>
           <a href="/reporte-2023.pdf" download>
-            REPORTE 2023
+            <FaFileDownload /> REPORTE 2023
           </a>
         </div>
       </section>
