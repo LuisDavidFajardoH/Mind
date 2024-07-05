@@ -37,6 +37,17 @@
   font-weight: bold;
 }
 
+.sobre-nosotros-header h1::after {
+  content: "";
+  display: block;
+  width: 400px; /* Ajusta el ancho de la línea según sea necesario */
+  height: 6px; /* Ajusta el grosor de la línea según sea necesario */
+  background-color: #006278; /* Color azul para la línea */
+  margin: 10px auto 0; /* Ajusta el margen superior y centra la línea */
+  border-radius: 2px; /* Opcional: redondea los bordes de la línea */
+  z-index: 2;
+}
+
 .sobre-nosotros-info {
   display: flex;
   flex-direction: column;
