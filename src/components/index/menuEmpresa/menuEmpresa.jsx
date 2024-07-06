@@ -30,7 +30,7 @@ const Informacion = () => {
           <div key="vision">
             <h2>NUESTRA VISIÓN</h2>
             <p className='p2'>
-              Ser líderes en la industria metalmecánica,reconocidos por nuestra excelencia en el servicio y nuestro compromiso con el desarrollo sostenible y el bienestar de la comunidad.
+              Consolidarnos en el 2025 como una organización confiable, competitiva y sostenible, enfocados en la innovación de productos y servicios del sector metalmecánico liviano, utilizando tecnología de punta que contribuya a la optimización de recursos, desarrollo y expansión, aportando al fortalecimiento y crecimiento de nuestro país.
             </p>
           </div>
         );

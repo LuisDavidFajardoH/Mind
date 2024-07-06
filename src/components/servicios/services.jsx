@@ -5,6 +5,7 @@ import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ServiciosComponent.css';
+import HeaderPagina from '../header-pagina/header-pagina';
 
 const services = [
   { icon: '/images/diseno.png', title: 'Diseño', description: 'Nuestros servicios de diseño incluyen creación de logotipos, diseño de páginas web, y más.' },
@@ -34,8 +35,8 @@ const ServiciosComponent = () => {
   return (
     <>
       <Navbar />
+      <HeaderPagina titulo="Nuestros Servicios" imagenFondo="servicios.jpg" />
       <div className="container">
-        <h2 className="title" data-aos="fade-down">NUESTROS SERVICIOS</h2>
         <div className="service-container">
           {services.map((service, index) => (
             <div className="service-item" key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>
