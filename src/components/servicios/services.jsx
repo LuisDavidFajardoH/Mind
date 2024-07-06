@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Navbar from '../navbar/navbar';
 import Footer from '../index/footer/footer';
+import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './ServiciosComponent.css';
@@ -45,6 +46,7 @@ const ServiciosComponent = () => {
           ))}
         </div>
       </div>
+      <BotonWhatsapp />
       <Footer />
     </>
   );
