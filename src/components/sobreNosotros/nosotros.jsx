@@ -4,15 +4,14 @@ import Navbar from "../navbar/navbar";
 import Footer from "../index/footer/footer";
 import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
 import { FaFileDownload } from "react-icons/fa";
+import HeaderPagina from "../header-pagina/header-pagina.jsx";
 
 const SobreNosotros = () => {
   return (
     <>
       <Navbar />
       <section className="sobre-nosotros">
-        <div className="sobre-nosotros-header">
-          <h1>Sobre Nosotros</h1>
-        </div>
+        <HeaderPagina titulo="Sobre Nosotros" imagenFondo="Hombre-soldando.jpg" />
       </section>
       <section className="sobre-nosotros-info">
         <p className="">
