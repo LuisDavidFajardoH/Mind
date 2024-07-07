@@ -49,6 +49,10 @@
     color: #006278; /* Color al pasar el cursor */
 }
 
+.navbar-item.active a {
+    color: #006278; /* Color del enlace activo */
+}
+
 .contact-button {
     background-color: #a7a7a773;
     color: #333;
