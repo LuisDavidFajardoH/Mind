@@ -31,7 +31,7 @@ const Servicios = () => {
       <HeaderPagina titulo="Política de Calidad" imagenFondo="Hombre-soldando.jpg" />
       <div className="section-background">
         <Container>
-          <Box className="section">
+          <Box className="sectionP">
             <Typography variant="h3" className="title" gutterBottom>
               Política de Calidad
             </Typography>
@@ -42,7 +42,7 @@ const Servicios = () => {
             </Typography>
           </Box>
 
-          <Box className="section objectives-section">
+          <Box className="sectionP objectives-section">
             <Typography variant="h4" className="title" gutterBottom>
               Objetivos de Calidad
             </Typography>
@@ -60,7 +60,7 @@ const Servicios = () => {
             </Grid>
           </Box>
 
-          <Box className="section download-section">
+          <Box className="sectionP download-section">
             <Typography variant="h5" className="title" gutterBottom>
               Políticas de Tratamiento
             </Typography>
