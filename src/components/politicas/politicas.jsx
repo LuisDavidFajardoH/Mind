@@ -11,7 +11,7 @@ import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import LineWeightIcon from '@mui/icons-material/LineWeight';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import './Servicios.css';
+import './politicas.css';
 
 const objectives = [
   { icon: <PeopleIcon fontSize="large" />, text: "Contribuir con la satisfacción del cliente." },
@@ -24,7 +24,7 @@ const objectives = [
   { icon: <AccessTimeIcon fontSize="large" />, text: "Dar cumplimiento a los requisitos aplicables." }
 ];
 
-const Servicios = () => {
+const Politicas = () => {
   return (
     <>
       <Navbar />
@@ -76,4 +76,4 @@ const Servicios = () => {
   );
 };
 
-export default Servicios;
+export default Politicas;

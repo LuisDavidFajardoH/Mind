@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import './Informacion.css';
+import './menuEmpresa.css';
 
 const Informacion = () => {
   const [activeTab, setActiveTab] = useState('empresa');

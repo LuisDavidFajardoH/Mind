@@ -1,0 +1,141 @@
+
+.sectionP {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-background {
+  background: #ffffff;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.section-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  transform: skewY(-2deg);
+  transform-origin: top left;
+  z-index: -1;
+}
+
+.title {
+  font-weight: bold;
+  color: #00796b;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.text {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Styles for Objectives Section */
+
+.objectives-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+}
+
+.objective-box {
+  background: transparent;
+  border: 2px solid #00796b;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 1rem;
+  width: calc(25% - 2rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.objective-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.objective-box svg {
+  font-size: 3rem;
+  color: #00796b;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.objective-box:hover svg {
+  color: #004d40;
+}
+
+.objective-box .text {
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.objective-box:hover .text {
+  color: #00796b;
+}
+
+/* Download Section Styles */
+
+.download-section {
+  background: linear-gradient(135deg, #00796b, #004d40);
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.download-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.download-section .title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.download-button {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #ffffff;
+  color: #00796b;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #004d40;
+  color: white;
+  border: 2px solid #004d40;
+}
+
+@media (max-width: 960px) {
+  .objective-box {
+    width: calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .objective-box {
+    width: calc(100% - 2rem);
+  }
+}
