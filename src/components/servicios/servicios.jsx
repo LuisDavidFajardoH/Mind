@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './servicios.css';
 import HeaderPagina from '../header-pagina/header-pagina.jsx';
+import { ArrowRight } from 'akar-icons';
 
 const services = [
   { icon: '/images/diseno.png', title: 'Diseño', description: 'Nuestros servicios de diseño incluyen creación de logotipos, diseño de páginas web, y más.' },
@@ -73,6 +74,12 @@ const ServiciosComponent = () => {
               </div>
             </div>
           ))}
+        </div>
+        <div className="pdf-button-center">
+        
+        <a href='Recomendaciones.pdf' target="_blank" className="pdf-button">
+          Recomendaciones <ArrowRight strokeWidth={2} size={17} />
+        </a>
         </div>
       </div>
       <BotonWhatsapp />
