@@ -4,7 +4,7 @@ import Footer from "../index/footer/footer.jsx";
 import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
 import { FaFileDownload } from "react-icons/fa";
 import HeaderPagina from "../header-pagina/header-pagina.jsx";
-import "./sobreNosotros.css";
+import "./SobreNosotros.css";
 
 const SobreNosotros = () => {
   return (
