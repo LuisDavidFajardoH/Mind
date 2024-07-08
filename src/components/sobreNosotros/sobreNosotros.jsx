@@ -1,10 +1,10 @@
 import React from "react";
-import "./SobreNosotros.css";
-import Navbar from "../navbar/navbar";
-import Footer from "../index/footer/footer";
+import Navbar from "../navbar/navbar.jsx";
+import Footer from "../index/footer/footer.jsx";
 import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
 import { FaFileDownload } from "react-icons/fa";
 import HeaderPagina from "../header-pagina/header-pagina.jsx";
+import "./sobreNosotros.css";
 
 const SobreNosotros = () => {
   return (

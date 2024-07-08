@@ -1,9 +1,9 @@
 import React from 'react'
 import Landing from './components/index/landing'
-import SobreNosotros from './components/sobreNosotros/nosotros';
-import Services from './components/servicios/services';
-import DesignSection from './components/diseño/diseno';
-import Servicios from './components/politicas/politicas';
+import SobreNosotros from './components/sobreNosotros/sobreNosotros';
+import Servicios from './components/servicios/servicios';
+import Diseno from './components/diseño/diseno';
+import Politicas from './components/politicas/politicas';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 
@@ -14,9 +14,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
-        <Route path="/servicios" element={<Services />} />
-        <Route path="/diseno" element={<DesignSection />} />
-        <Route path="/politicas" element={<Servicios />} />
+        <Route path="/servicios" element={<Servicios />} />
+        <Route path="/diseño" element={<Diseno />} />
+        <Route path="/politica-de-calidad" element={<Politicas />} />
       </Routes>
     </BrowserRouter>
   )

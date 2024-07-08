@@ -11,9 +11,9 @@ import BuildIcon from '@mui/icons-material/Build';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './DesignSection.css';
+import './diseno.css';
 
-const DesignSection = () => {
+const Diseno = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -71,4 +71,4 @@ const DesignSection = () => {
   );
 };
 
-export default DesignSection;
+export default Diseno;

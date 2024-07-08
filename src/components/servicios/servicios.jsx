@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
-import Navbar from '../navbar/navbar';
-import Footer from '../index/footer/footer';
+import Navbar from '../navbar/navbar.jsx';
+import Footer from '../index/footer/footer.jsx';
 import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import './ServiciosComponent.css';
-import HeaderPagina from '../header-pagina/header-pagina';
+import './servicios.css';
+import HeaderPagina from '../header-pagina/header-pagina.jsx';
 
 const services = [
   { icon: '/images/diseno.png', title: 'Diseño', description: 'Nuestros servicios de diseño incluyen creación de logotipos, diseño de páginas web, y más.' },
