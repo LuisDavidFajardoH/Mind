@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Navbar from '../navbar/navbar';
 import Separator from '../separador/divider';
 import Footer from '../index/footer/footer';
+import BotonWhatsapp from '../index/boton-whatsapp/boton-whatsapp';
 import HeaderPagina from '../header-pagina/header-pagina';
 import Typography from '@mui/material/Typography';
 import HearingIcon from '@mui/icons-material/Hearing';
@@ -64,6 +65,7 @@ const DesignSection = () => {
           </Typography>
         </div>
       </div>
+      <BotonWhatsapp />
       <Footer />
     </>
   );

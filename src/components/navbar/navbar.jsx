@@ -33,14 +33,14 @@ const Navbar = () => {
           <li className={`navbar-item ${location.pathname === '/diseno' ? 'active' : ''}`}>
             <a href="/diseno">Diseño</a>
           </li>
-          <li className={`navbar-item ${location.pathname === '/politica-calidad' ? 'active' : ''}`}>
-            <a href="#politica-calidad">Política de calidad</a>
+          <li className={`navbar-item ${location.pathname === '/politicas ' ? 'active' : ''}`}>
+            <a href="/politicas">Política de calidad</a>
           </li>
           <li className={`navbar-item ${location.pathname === '/proyectos' ? 'active' : ''}`}>
-            <a href="#proyectos">Proyectos</a>
+            <a href="/proyectos">Proyectos</a>
           </li>
           <li className={`navbar-item ${location.pathname === '/contactenos' ? 'active' : ''}`}>
-            <a href="#contactenos" className="contact-button">Contáctenos</a>
+            <a href="/contactenos" className="contact-button">Contáctenos</a>
           </li>
         </ul>
       </div>
