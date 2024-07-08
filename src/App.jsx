@@ -4,6 +4,8 @@ import SobreNosotros from './components/sobreNosotros/sobreNosotros';
 import Servicios from './components/servicios/servicios';
 import Diseno from './components/diseño/diseno';
 import Politicas from './components/politicas/politicas';
+import Proyectos from './components/proyectos/proyectos';
+import Contacto from './components/contactenos/contacto';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css'
 
@@ -17,6 +19,8 @@ function App() {
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/diseño" element={<Diseno />} />
         <Route path="/politica-de-calidad" element={<Politicas />} />
+        <Route path="/proyectos" element={<Proyectos />} />
+        <Route path="/contactenos" element={<Contacto />} />
       </Routes>
     </BrowserRouter>
   )
