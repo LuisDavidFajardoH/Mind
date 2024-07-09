@@ -9,7 +9,7 @@ const Contacto = () => {
   return (
     <>
       <Navbar />
-      <HeaderPagina titulo="Contacto" imagenFondo="Contacto.jpg" />
+      <HeaderPagina titulo="Contáctenos" imagenFondo="Contacto.jpg" />
       <div className="contacto">
         <div className="contacto-info">
           <h3>Contacto</h3>
