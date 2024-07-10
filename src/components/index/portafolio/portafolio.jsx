@@ -3,6 +3,10 @@ import './portafolio.css';
 import { ArrowRight } from 'akar-icons';
 
 const Portafolio = () => {
+  const redirectToProjects = () => {
+    window.location.href = '/proyectos';
+  };
+
   return (
     <div className="portafolio-container">
       <div className="proyectos">
@@ -17,7 +21,7 @@ const Portafolio = () => {
           <img src={'images/proyecto6.jpg'} alt="Proyecto 6" className="proyecto-imagen" />
         </div>
         <div className="briefcase-button-center">
-          <button className="briefcase-button">Ver Portafolio Completo&nbsp;<ArrowRight strokeWidth={2} size={17} /></button>
+          <button onClick={redirectToProjects} className="briefcase-button">Ver Portafolio Completo&nbsp;<ArrowRight strokeWidth={2} size={17} /></button>
         </div>
       </div>
     </div>
