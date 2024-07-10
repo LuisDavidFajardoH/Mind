@@ -31,25 +31,27 @@ const Politicas = () => {
       <HeaderPagina titulo="Política de Calidad" imagenFondo="Hombre-soldando.jpg" />
       <div className="section-background">
         <Container>
-          <Box className="sectionP">
-            <Typography variant="h3" className="title" gutterBottom>
+          <Box className="calidadP">
+            <Typography variant="h3" className="title animate__animated animate__fadeInDown" gutterBottom>
               Política de Calidad
             </Typography>
-            <Typography variant="body1" className="text">
-              Nos comprometemos a brindar productos y servicios metalmecánicos, que satisfagan y superen los requisitos de nuestros clientes,
-              ofreciendo respuesta oportuna, bajo costo y garantía, con personal competente, eficiencia en la asignación de recursos,
-              compromiso de mejora continua, seguridad de nuestros procesos y cumpliendo con los requisitos aplicables.
-            </Typography>
+            <Box className="text-box">
+              <Typography variant="body1" className="text animate__animated animate__fadeInUp">
+                Nos comprometemos a brindar productos y servicios metalmecánicos, que satisfagan y superen los requisitos de nuestros clientes,
+                ofreciendo respuesta oportuna, bajo costo y garantía, con personal competente, eficiencia en la asignación de recursos,
+                compromiso de mejora continua, seguridad de nuestros procesos y cumpliendo con los requisitos aplicables.
+              </Typography>
+            </Box>
           </Box>
 
           <Box className="sectionP objectives-section">
-            <Typography variant="h4" className="title" gutterBottom>
+            <Typography variant="h4" className="title animate__animated animate__fadeInDown" gutterBottom>
               Objetivos de Calidad
             </Typography>
             <Grid container spacing={3} justifyContent="center">
               {objectives.map((objective, index) => (
                 <Grid item xs={12} sm={6} md={3} key={index}>
-                  <Box className="objective-box">
+                  <Box className="objective-box animate__animated animate__zoomIn">
                     {objective.icon}
                     <Typography variant="body1" className="text">
                       {objective.text}
@@ -61,12 +63,14 @@ const Politicas = () => {
           </Box>
 
           <Box className="sectionP download-section">
-            <Typography variant="h5" className="title" gutterBottom>
+            <Typography variant="h5" className="title animate__animated animate__fadeInDown" gutterBottom>
               Políticas de Tratamiento
             </Typography>
-            <a href="/path/to/politicas_de_tratamiento.pdf" download className="download-button">
-              Políticas de Tratamiento
-            </a>
+            <Box className="download-box">
+              <a href="/path/to/politicas_de_tratamiento.pdf" download className="download-button animate__animated animate__pulse animate__infinite">
+                Políticas de Tratamiento
+              </a>
+            </Box>
           </Box>
         </Container>
       </div>
