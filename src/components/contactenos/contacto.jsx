@@ -1,27 +1,73 @@
-import React from "react";
-import Navbar from "../navbar/navbar";
-import HeaderPagina from "../header-pagina/header-pagina";
-import Footer from "../index/footer/footer";
-import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp";
-import "./contacto.css";
+import React from 'react';
+import Navbar from '../navbar/navbar';
+import Footer from '../index/footer/footer';
+import BotonWhatsapp from '../index/boton-whatsapp/boton-whatsapp';
+import HeaderPagina from '../header-pagina/header-pagina';
+import { Container, Box, TextField, Button, Typography } from '@mui/material';
+import PersonIcon from '@mui/icons-material/Person';
+import EmailIcon from '@mui/icons-material/Email';
+import MessageIcon from '@mui/icons-material/Message';
+import './contacto.css';
 
-const Contacto = () => {
+const Contact = () => {
   return (
     <>
       <Navbar />
-      <HeaderPagina titulo="Contáctenos" imagenFondo="Contacto.jpg" />
-      <div className="contacto">
-        <div className="contacto-info">
-          <h3>Contacto</h3>
-          <p>
-            En esta sección se mostrarán los datos de contacto de la empresa
-          </p>
-        </div>
-      </div>
+      <HeaderPagina titulo="Contacto" imagenFondo="ruta-de-tu-imagen.jpg" />
+      <Container className="contact-container">
+        <Box className="contact-box">
+          <Box className="contact-form">
+            <Typography variant="h4" className="contact-title">
+              Contact us
+            </Typography>
+            <Box className="contact-input-box">
+              <PersonIcon className="contact-icon" />
+              <TextField
+                variant="outlined"
+                label="Name"
+                fullWidth
+                margin="normal"
+                InputLabelProps={{ className: 'contact-input-label' }}
+                InputProps={{ className: 'contact-input' }}
+              />
+            </Box>
+            <Box className="contact-input-box">
+              <EmailIcon className="contact-icon" />
+              <TextField
+                variant="outlined"
+                label="Email"
+                fullWidth
+                margin="normal"
+                InputLabelProps={{ className: 'contact-input-label' }}
+                InputProps={{ className: 'contact-input' }}
+              />
+            </Box>
+            <Box className="contact-input-box">
+              <MessageIcon className="contact-icon" />
+              <TextField
+                variant="outlined"
+                label="Message"
+                fullWidth
+                margin="normal"
+                multiline
+                rows={4}
+                InputLabelProps={{ className: 'contact-input-label' }}
+                InputProps={{ className: 'contact-input' }}
+              />
+            </Box>
+            <Button variant="contained" className="contact-button">
+              Send Message
+            </Button>
+          </Box>
+          <Box className="contact-image">
+            <img src="images/Contacto.webp" alt="Contact" className="contact-image-element" />
+          </Box>
+        </Box>
+      </Container>
       <BotonWhatsapp />
       <Footer />
     </>
   );
 };
 
-export default Contacto;
+export default Contact;

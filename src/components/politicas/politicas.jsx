@@ -6,6 +6,7 @@ import Footer from '../index/footer/footer';
 import BotonWhatsapp from '../index/boton-whatsapp/boton-whatsapp';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import DescriptionIcon from '@mui/icons-material/Description';
+import Separator from '../separador/divider'
 import PeopleIcon from '@mui/icons-material/People';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
@@ -43,7 +44,7 @@ const Politicas = () => {
               </Typography>
             </Box>
           </Box>
-
+          <Separator />
           <Box className="sectionP objectives-section">
             <Typography variant="h4" className="title animate__animated animate__fadeInDown" gutterBottom>
               Objetivos de Calidad
@@ -61,7 +62,7 @@ const Politicas = () => {
               ))}
             </Grid>
           </Box>
-
+              <Separator />
           <Box className="sectionP download-section">
             <Typography variant="h5" className="title animate__animated animate__fadeInDown" gutterBottom>
               Políticas de Tratamiento
