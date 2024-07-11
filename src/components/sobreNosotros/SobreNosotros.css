@@ -2,6 +2,7 @@
 
 .sobrenosotros {
   background-color: #006278;
+  /*#004858*/
   animation: fadeIn 1s;
 }
 
@@ -109,13 +110,13 @@
 .reconocimiento-item h1 {
   font-weight: bold;
   color: #006278;
-  font-size: 22px;
+  font-size: 1.4em;
 }
 
 .reconocimiento-item p {
   color: #666;
   margin-top: -10px;
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 /* Animaciones */
