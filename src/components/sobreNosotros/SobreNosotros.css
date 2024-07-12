@@ -4,25 +4,38 @@
   animation: fadeIn 1s;
 }
 
+.side-images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 .sobrenosotros-info {
-  border-radius: 25px;
   background-color: #f8f9fa;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #333;
-  margin-top: 2%;
-  margin-left: 27%;
-  margin-right: 27%;
-  margin-bottom: 2%;
-  padding: 60px;
+  margin: 2% 27%;
+  padding: 50px;
+  z-index: 1;
 }
 
-.sobrenosotros-info h1 {
-  margin-top: 0%;
-  font-size: 2em;
-  font-weight: bold;
-  color: #006278;
+.side-image {
+  width: auto;
+  height: 93%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.side-image:first-of-type {
+  left: 0;
+}
+
+.side-image:last-of-type {
+  right: 0;
 }
 
 .sobrenosotros-info h2 {
@@ -85,15 +98,16 @@
 
 .reconocimiento-grid {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   color: #333;
-  display: flex;
-  margin: 4em 15% 0%;
+  margin: 4em 15% 0;
 }
 
 .reconocimiento-item {
-  flex: 1;
+  flex: 1 1 30%;
+  max-width: 30%;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
@@ -127,36 +141,62 @@
   }
 }
 
+@media (max-width: 1540px) {
+  .sobrenosotros-info {
+    margin: 2% 25%;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sobrenosotros-info {
+    margin: 5%;
+    padding: 5%;
+  }
+
+  .side-image {
+    display: none;
+  }
+
+  .reconocimiento-item {
+    flex: 1 1 100%;
+    max-width: 45%;
+  }
+}
+
 @media (max-width: 768px) {
-  .sobre-nosotros-header h1 {
-    font-size: 3em;
+  .sobrenosotros-info {
+    margin: 5%;
+    padding: 5%;
   }
 
-  .sobre-nosotros-info {
-    margin-left: 5%;
-    margin-right: 5%;
+  .side-image {
+    display: none;
   }
 
-  .sobre-nosotros-info h2 {
+  .sobrenosotros-info h2 {
     font-size: 1.8em;
   }
 
-  .reporte-bic {
-    margin-top: -7%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+  .sobrenosotros-info p {
+    font-size: 1em;
   }
 
-  .reporte-bic img {
+  .logo-bic {
     width: 200px;
   }
 
-  .reporte-bic h2 {
-    font-size: 1.8em;
+  .sobrenosotros-reconocimiento {
+    padding: 40px;
   }
 
-  .reporte-bic p {
-    margin-bottom: 10%;
+  .reconocimiento-grid {
+    margin: 3em 5% 0;
+  }
+
+  .reconocimiento-item {
+    padding: 0;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }

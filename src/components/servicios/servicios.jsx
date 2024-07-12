@@ -39,9 +39,9 @@ const ServiciosComponent = () => {
   return (
     <>
       <Navbar />
-      <HeaderPagina titulo="Nuestros Servicios" imagenFondo="servicios.jpg" />
+      <HeaderPagina titulo="Nuestros Servicios" imagenFondo="nuestros-servicios.jpg" />
       <div className="container">
-        <h2 style={{marginTop:'-2%'}}  className="section-title">Servicios</h2>
+        <h2 style={{marginTop:'0.5%'}}  className="section-title">Servicios</h2>
         <div className="services-grid">
           {services.map((service, index) => (
             <div className="flip-card" key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>
