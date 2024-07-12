@@ -22,7 +22,7 @@
   margin: 2rem auto;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #ffffff, #b7b7b7, #969696);
+  background: linear-gradient(135deg, #ebebeb, #bbbbbb, #ebebeb);
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
@@ -30,6 +30,7 @@
   padding: 4rem 2rem;
   position: relative;
   z-index: 1;
+  background-color: #f5f5f5;
 }
 
 .title {
@@ -65,12 +66,15 @@
 }
 
 .objective-box {
-  background: linear-gradient(135deg, #ffffff, #8badd8, #8badd8);
+  background: linear-gradient(135deg, #ebebeb, #bbbbbb, #ebebeb);
   border-radius: 8px;
   padding: 2rem;
   margin: 1rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  height: 170px;
+  width: 150px;
+  position: relative;
 }
 
 .objective-box:hover {
@@ -97,6 +101,32 @@
 
 .objective-box:hover .text {
   color: #006278;
+}
+
+.objective-box::before, .objective-box::after,
+.objective-box::before, .objective-box::after {
+  content: '✖';
+  position: absolute;
+  font-size: 0.8rem;
+  color: #525252;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  
+  background: linear-gradient(135deg, #ebebeb, #a1a1a1, #ebebeb);
+}
+
+.objective-box::before {
+  top: 0.5rem;
+  left: 0.5rem;
+}
+
+.objective-box::after {
+  bottom: 0.5rem;
+  right: 0.5rem;
 }
 
 /* Download Section Styles */
