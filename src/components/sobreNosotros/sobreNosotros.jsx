@@ -11,7 +11,7 @@ const SobreNosotros = () => {
     <>
       <Navbar />
       <section className="sobrenosotros">
-        <HeaderPagina titulo="Sobre Nosotros" imagenFondo="Hombre-soldando.jpg" />
+        <HeaderPagina titulo="Sobre Nosotros" imagenFondo="sobre-nosotros-equipo.jpg" />
         <section className="sobrenosotros-info">
           <h1>Sobre Nosotros</h1>
           <p>
