@@ -29,7 +29,7 @@ const Politicas = () => {
   return (
     <>
       <Navbar />
-      <HeaderPagina titulo="Política de Calidad" imagenFondo="Hombre-soldando.jpg" />
+      <HeaderPagina titulo="Política de Calidad" imagenFondo="politica-de-calidad.jpg" />
       <div className="section-background">
         <Container>
           <Box className="calidadP">

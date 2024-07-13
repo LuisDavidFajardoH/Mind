@@ -37,7 +37,7 @@
 .header-pagina h1::after {
     content: "";
     display: block;
-    width: 400px; /* Ajusta el ancho de la línea según sea necesario */
+    width: 180px; /* Ajusta el ancho de la línea según sea necesario */
     height: 6px; /* Ajusta el grosor de la línea según sea necesario */
     background-color: #006278; /* Color azul para la línea */
     margin: 10px auto 0; /* Ajusta el margen superior y centra la línea */
