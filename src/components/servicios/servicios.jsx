@@ -9,12 +9,12 @@ import HeaderPagina from '../header-pagina/header-pagina.jsx';
 import { ArrowRight } from 'akar-icons';
 
 const services = [
-  { icon: '/images/diseno.png', title: 'Diseño', description: 'Nuestros servicios de diseño incluyen creación de logotipos, diseño de páginas web, y más.' },
-  { icon: '/icons/corte.png', title: 'Corte', description: 'Realizamos cortes precisos con tecnología de última generación para diferentes materiales.' },
-  { icon: '/icons/punzado.png', title: 'Punzado', description: 'Ofrecemos servicios de punzado con alta precisión y eficiencia.' },
-  { icon: '/icons/doblado.png', title: 'Doblado', description: 'Servicios de doblado y curvado de materiales con estándares de calidad.' },
-  { icon: '/icons/soldadura.png', title: 'Soldadura', description: 'Realizamos soldadura MIG, TIG, Punto, garantizando durabilidad y resistencia.' },
-  { icon: '/icons/acabado.png', title: 'Acabado', description: 'Ofrecemos servicios de acabado y pintura para un toque final perfecto.' },
+  { icon: '/images/servicio-diseño.jpg', title: 'Diseño', description: 'Nuestros servicios de diseño incluyen creación de logotipos, diseño de páginas web, y más.' },
+  { icon: '/images/servicio-corte.jpg', title: 'Corte', description: 'Realizamos cortes precisos con tecnología de última generación para diferentes materiales.' },
+  { icon: '/images/servicio-punzado.jpg', title: 'Punzado', description: 'Ofrecemos servicios de punzado con alta precisión y eficiencia.' },
+  { icon: '/images/servicio-doblado.jpg', title: 'Doblado', description: 'Servicios de doblado y curvado de materiales con estándares de calidad.' },
+  { icon: '/images/servicio-soldadura.jpg', title: 'Soldadura', description: 'Realizamos soldadura MIG, TIG, Punto, garantizando durabilidad y resistencia.' },
+  { icon: '/images/servicio-acabado.jpg', title: 'Acabado', description: 'Ofrecemos servicios de acabado y pintura para un toque final perfecto.' },
 ];
 
 const materials = [
@@ -41,7 +41,7 @@ const ServiciosComponent = () => {
       <Navbar />
       <HeaderPagina titulo="Nuestros Servicios" imagenFondo="nuestros-servicios.jpg" />
       <div className="container">
-        <h2 style={{marginTop:'0.5%'}}  className="section-title">Servicios</h2>
+        <h2 className="section-title">Servicios</h2>
         <div className="services-grid">
           {services.map((service, index) => (
             <div className="flip-card" key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>

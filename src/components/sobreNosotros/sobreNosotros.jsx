@@ -66,12 +66,12 @@ const SobreNosotros = () => {
               <p>Fundadora</p>
             </div>
             <div className="reconocimiento-item">
-              <img src="/images/foto-cuadrada.jpg" alt="Persona 2"/>
+              <img src="/images/imagen-papa.jpg" alt="Persona 2"/>
               <h1>Hernando Sánchez</h1>
               <p>Colaborador</p>
             </div>
             <div className="reconocimiento-item">
-              <img src="/images/foto-cuadrada.jpg" alt="Persona 3"/>
+              <img src="/images/imagen-mama.jpg" alt="Persona 3"/>
               <h1>Gabriela Rueda Acevedo</h1>
               <p>Directora junta directíva y actual dueña</p>
             </div>
