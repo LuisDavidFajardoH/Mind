@@ -7,24 +7,25 @@ import { Container, Box, TextField, Button, Typography } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import EmailIcon from '@mui/icons-material/Email';
 import MessageIcon from '@mui/icons-material/Message';
+import Map from './map/maps'; 
 import './contacto.css';
 
 const Contact = () => {
   return (
     <>
       <Navbar />
-      <HeaderPagina titulo="Contacto" imagenFondo="ruta-de-tu-imagen.jpg" />
+      <HeaderPagina titulo="Contacto" imagenFondo="contactenos.jpg" />
       <Container className="contact-container">
         <Box className="contact-box">
           <Box className="contact-form">
             <Typography variant="h4" className="contact-title">
-              Contact us
+              ¡Contáctanos!
             </Typography>
             <Box className="contact-input-box">
               <PersonIcon className="contact-icon" />
               <TextField
                 variant="outlined"
-                label="Name"
+                label="Nombre"
                 fullWidth
                 margin="normal"
                 InputLabelProps={{ className: 'contact-input-label' }}
@@ -35,7 +36,7 @@ const Contact = () => {
               <EmailIcon className="contact-icon" />
               <TextField
                 variant="outlined"
-                label="Email"
+                label="Correo"
                 fullWidth
                 margin="normal"
                 InputLabelProps={{ className: 'contact-input-label' }}
@@ -46,7 +47,7 @@ const Contact = () => {
               <MessageIcon className="contact-icon" />
               <TextField
                 variant="outlined"
-                label="Message"
+                label="Mensaje"
                 fullWidth
                 margin="normal"
                 multiline
@@ -55,14 +56,32 @@ const Contact = () => {
                 InputProps={{ className: 'contact-input' }}
               />
             </Box>
-            <Button variant="contained" className="contact-button">
-              Send Message
+            <Button variant="contained" className="contact-buttonC" style={{ backgroundColor: "gray" }}>
+              Enviar Mensaje
             </Button>
           </Box>
           <Box className="contact-image">
             <img src="images/Contacto.webp" alt="Contact" className="contact-image-element" />
           </Box>
         </Box>
+      </Container>
+
+      <Container className="mid-section-container">
+        <Box className="mid-section">
+          <Box className="mid-section-image">
+            <img src="images/working.jpg" alt="Working" className="mid-image-element" />
+          </Box>
+          <Box className="mid-section-qr">
+            <Typography variant="h5" className="mid-section-title">
+              Queremos conocer tu opinión
+            </Typography>
+            <img src="images/qr-code.png" alt="QR Code" className="mid-qr-element" />
+          </Box>
+        </Box>
+      </Container>
+
+      <Container className="map-container">
+        <Map />
       </Container>
       <BotonWhatsapp />
       <Footer />
