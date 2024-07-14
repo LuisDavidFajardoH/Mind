@@ -7,7 +7,7 @@ import { Container, Box, TextField, Button, Typography } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import EmailIcon from '@mui/icons-material/Email';
 import MessageIcon from '@mui/icons-material/Message';
-import Map from './map/maps'; 
+import Map from './map/maps';
 import './contacto.css';
 
 const Contact = () => {
@@ -56,7 +56,7 @@ const Contact = () => {
                 InputProps={{ className: 'contact-input' }}
               />
             </Box>
-            <Button variant="contained" className="contact-buttonC" style={{ backgroundColor: "gray" }}>
+            <Button variant="contained" className="contact-buttonC">
               Enviar Mensaje
             </Button>
           </Box>
@@ -69,13 +69,13 @@ const Contact = () => {
       <Container className="mid-section-container">
         <Box className="mid-section">
           <Box className="mid-section-image">
-            <img src="images/working.jpg" alt="Working" className="mid-image-element" />
+            <img src="images/servicios.jpg" alt="Working" className="mid-image-element" />
           </Box>
           <Box className="mid-section-qr">
             <Typography variant="h5" className="mid-section-title">
               Queremos conocer tu opinión
             </Typography>
-            <img src="images/qr-code.png" alt="QR Code" className="mid-qr-element" />
+            <img src="images/Qr.png" alt="QR Code" className="mid-qr-element" />
           </Box>
         </Box>
       </Container>
