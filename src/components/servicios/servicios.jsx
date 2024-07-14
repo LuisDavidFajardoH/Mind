@@ -41,7 +41,7 @@ const ServiciosComponent = () => {
       <Navbar />
       <HeaderPagina titulo="Nuestros Servicios" imagenFondo="nuestros-servicios.jpg" />
       <div className="container">
-        <h2 className="section-title">Servicios</h2>
+        <h2 className="section-title2">Servicios</h2>
         <div className="services-grid">
           {services.map((service, index) => (
             <div className="flip-card" key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>
@@ -58,7 +58,7 @@ const ServiciosComponent = () => {
             </div>
           ))}
         </div>
-        <h2 className="section-title">Materiales</h2>
+        <h2 className="section-title2">Materiales</h2>
         <div className="materials-grid">
           {materials.map((material, index) => (
             <div className="flip-card" key={index} data-aos="fade-up" data-aos-delay={`${index * 100}`}>

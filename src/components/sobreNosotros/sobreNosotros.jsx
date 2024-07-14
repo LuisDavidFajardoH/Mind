@@ -58,7 +58,7 @@ const SobreNosotros = () => {
           <img className="side-image" src="/images/z.jpg" alt="Imagen lateral derecha"/>
         </div>
         <section className="sobrenosotros-reconocimiento">
-          <h2>En Reconocimiento a su Legado, Trabajo y Compromiso</h2>
+          <h2 className="reconocimiento-titulo">En Reconocimiento a su Legado, Trabajo y Compromiso</h2>
           <div className="reconocimiento-grid">
             <div className="reconocimiento-item">
               <img src="/images/foto-cuadrada.jpg" alt="Persona 1"/>

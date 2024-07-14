@@ -8,15 +8,15 @@
 }
 
 /* Section Title Styles */
-.section-title {
+.section-title2 {
   font-size: 2em;
   margin-top: 40px;
-  color: #006278;
+  color: #292e2f;
   position: relative;
   display: inline-block;
 }
 
-.section-title::after {
+.section-title2::after {
   content: '';
   width: 60px;
   height: 4px;
@@ -43,15 +43,15 @@
 
 /* Flip Card Styles */
 .flip-card {
-  background-color: transparent;
   width: 160px;
   height: 220px;
+  position: relative;
   perspective: 1000px;
   margin-bottom: 20px;
 }
 
 .flip-card-inner {
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -67,29 +67,25 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
   padding: 20px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: -20px;
 }
 
 .flip-card-front {
   background-color: #006278;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .flip-card-back {
   background-color: #292e2f;
-  color: white;
   transform: rotateY(180deg);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 /* Icon Styles */
@@ -115,7 +111,7 @@
 
 /* Adjust Flip Card Position */
 .flip-card-inner {
-  transform-origin: center center;
+  transform-origin: center;
 }
 
 .pdf-button-center {
