@@ -1,19 +1,32 @@
-import React from 'react';
-import Navbar from '../navbar/navbar';
-import Footer from '../index/footer/footer';
-import BotonWhatsapp from '../index/boton-whatsapp/boton-whatsapp';
-import HeaderPagina from '../header-pagina/header-pagina';
-import { Container, Box, TextField, Button, Typography } from '@mui/material';
-import PersonIcon from '@mui/icons-material/Person';
-import EmailIcon from '@mui/icons-material/Email';
-import MessageIcon from '@mui/icons-material/Message';
-import Separator from '../../components/separador/divider';
-import Map from './map/maps';
-import './contacto.css';
+import React from "react";
+import Navbar from "../navbar/navbar";
+import Footer from "../index/footer/footer";
+import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp";
+import HeaderPagina from "../header-pagina/header-pagina";
+import { Container, Box, TextField, Button, Typography } from "@mui/material";
+import PersonIcon from "@mui/icons-material/Person";
+import EmailIcon from "@mui/icons-material/Email";
+import MessageIcon from "@mui/icons-material/Message";
+import Separator from "../../components/separador/divider";
+import Map from "./map/maps";
+import { Helmet } from "react-helmet";
+import "./contacto.css";
 
 const Contact = () => {
   return (
     <>
+      <Helmet>
+        <title>Contacto - Mind SAS BIC | Innovación en Metalmecánica</title>
+        <meta
+          name="description"
+          content="Contáctanos en Mind SAS BIC para más información sobre nuestros productos y servicios metalmecánicos. Estamos aquí para ayudarte con cualquier consulta que tengas."
+        />
+        <meta
+          name="keywords"
+          content="Mind SAS BIC, contacto, metalmecánica, consulta, productos de metal, servicios de metal, diseño de metal, fabricación de metal, corte de metal, doblado de metal, punzado de metal, soldadura de metal, acabados de metal, transformación de metal, soluciones de metal, industria metalmecánica, plataforma petrolera, industria automotriz"
+        />
+      </Helmet>
+
       <Navbar />
       <HeaderPagina titulo="Contacto" imagenFondo="contactenos.jpg" />
       <Container className="contact-container">
@@ -29,8 +42,8 @@ const Contact = () => {
                 label="Nombre"
                 fullWidth
                 margin="normal"
-                InputLabelProps={{ className: 'contact-input-label' }}
-                InputProps={{ className: 'contact-input' }}
+                InputLabelProps={{ className: "contact-input-label" }}
+                InputProps={{ className: "contact-input" }}
               />
             </Box>
             <Box className="contact-input-box">
@@ -40,8 +53,8 @@ const Contact = () => {
                 label="Correo"
                 fullWidth
                 margin="normal"
-                InputLabelProps={{ className: 'contact-input-label' }}
-                InputProps={{ className: 'contact-input' }}
+                InputLabelProps={{ className: "contact-input-label" }}
+                InputProps={{ className: "contact-input" }}
               />
             </Box>
             <Box className="contact-input-box">
@@ -53,8 +66,8 @@ const Contact = () => {
                 margin="normal"
                 multiline
                 rows={4}
-                InputLabelProps={{ className: 'contact-input-label' }}
-                InputProps={{ className: 'contact-input' }}
+                InputLabelProps={{ className: "contact-input-label" }}
+                InputProps={{ className: "contact-input" }}
               />
             </Box>
             <Button variant="contained" className="contact-buttonC">
@@ -62,14 +75,22 @@ const Contact = () => {
             </Button>
           </Box>
           <Box className="contact-image">
-            <img src="images/Contacto.webp" alt="Contact" className="contact-image-element" />
+            <img
+              src="images/Contacto.webp"
+              alt="Contact"
+              className="contact-image-element"
+            />
           </Box>
         </Box>
       </Container>
       <Container className="mid-section-container">
         <Box className="mid-section">
           <Box className="mid-section-image">
-            <img src="images/servicios.jpg" alt="Working" className="mid-image-element" />
+            <img
+              src="images/servicios.jpg"
+              alt="Working"
+              className="mid-image-element"
+            />
           </Box>
           <Box className="mid-section-qr">
             <Typography variant="h5" className="mid-section-title">

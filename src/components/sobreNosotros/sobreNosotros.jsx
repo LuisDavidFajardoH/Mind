@@ -4,16 +4,42 @@ import Footer from "../index/footer/footer.jsx";
 import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
 import { FaFileDownload } from "react-icons/fa";
 import HeaderPagina from "../header-pagina/header-pagina.jsx";
+import { Helmet } from "react-helmet";
 import "./SobreNosotros.css";
+
+// Importa los archivos PDF
+import reporte2022 from './BIC_2022.pdf';
+import reporte2023 from './REPORTE_BIC_2023.pdf';
 
 const SobreNosotros = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Sobre Nosotros - Mind SAS BIC | Innovación en Metalmecánica
+        </title>
+        <meta
+          name="description"
+          content="Conoce más sobre Mind SAS BIC, una empresa del sector metalmecánico con más de 30 años de experiencia transformando el metal. Descubre nuestro compromiso como Sociedad BIC y descarga nuestros reportes de gestión."
+        />
+        <meta
+          name="keywords"
+          content="Mind SAS BIC, sobre nosotros, empresa metalmecánica, transformación del metal, industria, sector petrolero, decoración, acabados, empresa BIC, responsabilidad social, medio ambiente, bienestar, reporte BIC"
+        />
+      </Helmet>
+
       <Navbar />
       <section className="sobrenosotros">
-        <HeaderPagina titulo="Sobre Nosotros" imagenFondo="sobre-nosotros-equipo.jpg" />
+        <HeaderPagina
+          titulo="Sobre Nosotros"
+          imagenFondo="sobre-nosotros-equipo.jpg"
+        />
         <div className="side-images-container">
-          <img className="side-image" src="/images/x.jpg" alt="Imagen lateral izquierda"/>
+          <img
+            className="side-image"
+            src="/images/x.jpg"
+            alt="Imagen lateral izquierda"
+          />
           <section className="sobrenosotros-info">
             <h2>Sobre Nosotros</h2>
             <p>
@@ -39,39 +65,47 @@ const SobreNosotros = () => {
               Es así como en el año 2022 adoptamos la condición BIC y a
               continuación presentamos el primer reporte de Gestión BIC.
             </p>
-            <img className="logo-bic" src="/images/bicAzul.png" alt="Logo BIC" />
+            <img
+              className="logo-bic"
+              src="/images/bicAzul.png"
+              alt="Logo BIC"
+            />
             <h2>Reporte BIC</h2>
             <p>
-              Para conocer más acerca de nuestro compromiso como Sociedad BIC, lo
-              invitamos a leer nuestro primer Reporte BIC. Haga clic para descargar
-              reportes.
+              Para conocer más acerca de nuestro compromiso como Sociedad BIC,
+              lo invitamos a leer nuestro primer Reporte BIC. Haga clic para
+              leer los reportes.
             </p>
             <div className="reporte-bic-buttons">
-              <a href="/reporte-2022.pdf" download>
+              <a href={reporte2022} target="_blank" rel="noopener noreferrer">
                 <FaFileDownload /> REPORTE 2022
               </a>
-              <a href="/reporte-2023.pdf" download>
+              <a href={reporte2023} target="_blank" rel="noopener noreferrer">
                 <FaFileDownload /> REPORTE 2023
               </a>
             </div>
           </section>
-          <img className="side-image" src="/images/z.jpg" alt="Imagen lateral derecha"/>
+          <img
+            className="side-image"
+            src="/images/z.jpg"
+            alt="Imagen lateral derecha"
+          />
         </div>
         <section className="sobrenosotros-reconocimiento">
           <h2>En Reconocimiento a su Legado, Trabajo y Compromiso</h2>
           <div className="reconocimiento-grid">
             <div className="reconocimiento-item">
-              <img src="/images/foto-cuadrada.jpg" alt="Persona 1"/>
+              <img src="/images/foto-cuadrada.jpg" alt="Persona 1" />
               <h1>María Rosalba Acevedo</h1>
               <p>Fundadora</p>
             </div>
             <div className="reconocimiento-item">
-              <img src="/images/imagen-papa.jpg" alt="Persona 2"/>
+              <img src="/images/imagen-papa.jpg" alt="Persona 2" />
               <h1>Hernando Sánchez</h1>
               <p>Colaborador</p>
             </div>
             <div className="reconocimiento-item">
-              <img src="/images/imagen-mama.jpg" alt="Persona 3"/>
+              <img src="/images/imagen-mama.jpg" alt="Persona 3" />
               <h1>Gabriela Rueda Acevedo</h1>
               <p>Directora junta directíva y actual dueña</p>
             </div>
