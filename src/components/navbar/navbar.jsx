@@ -30,8 +30,8 @@ const Navbar = () => {
           <li className={`navbar-item ${location.pathname === '/servicios' ? 'active' : ''}`}>
             <a href="/servicios">Servicios</a>
           </li>
-          <li className={`navbar-item ${location.pathname === '/diseño' ? 'active' : ''}`}>
-            <a href="/diseño">Diseño</a>
+          <li className={`navbar-item ${location.pathname === '/diseno' ? 'active' : ''}`}>
+            <a href="/diseno">Diseño</a>
           </li>
           <li className={`navbar-item ${location.pathname === '/politica-de-calidad' ? 'active' : ''}`}>
             <a href="/politica-de-calidad">Política de calidad</a>

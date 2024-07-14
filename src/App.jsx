@@ -17,7 +17,7 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
         <Route path="/servicios" element={<Servicios />} />
-        <Route path="/diseño" element={<Diseno />} />
+        <Route path="/diseno" element={<Diseno />} />
         <Route path="/politica-de-calidad" element={<Politicas />} />
         <Route path="/proyectos" element={<Proyectos />} />
         <Route path="/contactenos" element={<Contacto />} />
