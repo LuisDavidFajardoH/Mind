@@ -7,6 +7,7 @@ import { Container, Box, TextField, Button, Typography } from '@mui/material';
 import PersonIcon from '@mui/icons-material/Person';
 import EmailIcon from '@mui/icons-material/Email';
 import MessageIcon from '@mui/icons-material/Message';
+import Separator from '../../components/separador/divider';
 import Map from './map/maps';
 import './contacto.css';
 
@@ -65,7 +66,6 @@ const Contact = () => {
           </Box>
         </Box>
       </Container>
-
       <Container className="mid-section-container">
         <Box className="mid-section">
           <Box className="mid-section-image">
@@ -79,6 +79,7 @@ const Contact = () => {
           </Box>
         </Box>
       </Container>
+      <Separator />
 
       <Container className="map-container">
         <Map />
