@@ -5,8 +5,6 @@
   padding: 20px;
   margin-left: 3%;
   margin-right: 3%;
-  background-color: #ffffff;
-  color: white;
 }
 
 /* Section Title Styles */
@@ -32,12 +30,15 @@
 /* Services and Materials Grid Styles */
 .services-grid, .materials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   margin-top: 50px;
   margin-bottom: 40px;
   justify-items: center;
   align-items: center;
+  max-width: calc(240px * 3 + 40px * 2); /* Ajusta el ancho máximo */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Flip Card Styles */
@@ -143,8 +144,17 @@
   background-color: #00404e;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+  .services-grid, .materials-grid {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: calc(240px * 2 + 40px * 2); /* Ajusta el ancho máximo */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
 
+@media screen and (max-width: 768px) {
   .section-title {
     font-size: 1.6em;
   }

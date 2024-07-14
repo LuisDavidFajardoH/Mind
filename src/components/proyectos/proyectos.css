@@ -8,7 +8,7 @@
 .proyectos-pagina {
   display: flex;
   justify-content: center;
-  background-color: #44444455;
+  background-color: #f0f0f0;
 }
 
 .proyectos-container {
@@ -20,7 +20,7 @@
 .proyectos-container h2 {
   margin-top: 0;
   font-size: 25px;
-  color: #ffffff;
+  color: #006278;
 }
 
 .imagenes-proyectos {
