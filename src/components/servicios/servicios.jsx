@@ -18,12 +18,12 @@ const services = [
 ];
 
 const materials = [
-  { icon: '/icons/lamina.png', title: 'Lámina', description: 'Procesamos láminas de diversos materiales, adaptándonos a tus necesidades.' },
-  { icon: '/icons/perfiles.png', title: 'Perfiles', description: 'Fabricamos perfiles de diferentes formas y tamaños, personalizados para tu proyecto.' },
-  { icon: '/icons/acero.png', title: 'Acero', description: 'Trabajamos con acero de alta calidad, ofreciendo soluciones robustas y duraderas.' },
-  { icon: '/icons/hierro.png', title: 'Hierro', description: 'Servicios especializados en hierro para diferentes aplicaciones industriales.' },
-  { icon: '/icons/aluminio.png', title: 'Aluminio', description: 'Procesamos aluminio para múltiples usos, garantizando ligereza y resistencia.' },
-  { icon: '/icons/otros.png', title: 'Otros', description: 'Otros servicios de transformación de metales, adaptados a tus necesidades específicas.' },
+  { icon: '/images/material-lamina.jpg', title: 'Lámina', description: 'Procesamos láminas de diversos materiales, adaptándonos a tus necesidades.' },
+  { icon: '/images/material-perfiles.jpg', title: 'Perfiles', description: 'Fabricamos perfiles de diferentes formas y tamaños, personalizados para tu proyecto.' },
+  { icon: '/images/material-acero.jpg', title: 'Acero', description: 'Trabajamos con acero de alta calidad, ofreciendo soluciones robustas y duraderas.' },
+  { icon: '/images/material-hierro.jpg', title: 'Hierro', description: 'Servicios especializados en hierro para diferentes aplicaciones industriales.' },
+  { icon: '/images/material-aluminio.jpg', title: 'Aluminio', description: 'Procesamos aluminio para múltiples usos, garantizando ligereza y resistencia.' },
+  { icon: '/images/material-otros.jpg', title: 'Otros', description: 'Otros servicios de transformación de metales, adaptados a tus necesidades específicas.' },
 ];
 
 const ServiciosComponent = () => {
