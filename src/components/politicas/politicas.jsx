@@ -14,8 +14,6 @@ import LineWeightIcon from "@mui/icons-material/LineWeight";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import { Helmet } from "react-helmet";
 import "./politicas.css";
-
-// Importa el archivo PDF
 import politicasTratamientoPDF from './politicas-de-tratamiento.pdf';
 
 const objectives = [
@@ -108,7 +106,7 @@ const Politicas = () => {
             </Typography>
             <Grid container spacing={3} justifyContent="center">
               {objectives.map((objective, index) => (
-                <Grid item xs={12} sm={6} md={3} key={index}>
+                <Grid item xs={12} sm={6} md={4} lg={3} key={index} style={{ display: 'flex', justifyContent: 'center' }}>
                   <Box className="objective-box animate__animated animate__zoomIn">
                     {objective.icon}
                     <Typography variant="body1" className="text">

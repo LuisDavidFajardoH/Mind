@@ -25,21 +25,21 @@ const Diseno = () => {
       icon: <HearingIcon className="icon" />,
       description:
         "Nos aseguramos de entender tus necesidades antes de empezar cualquier proyecto.",
-      image: "images/Escuchamos.webp",
+      image: "images/escuchamos.jpg",
     },
     {
       title: "Diseñamos",
       icon: <DesignServicesIcon className="icon" />,
       description:
         "A partir de sus necesidades generamos ideas y conceptos que luego transformamos en diseños innovadores que respondan a su situación particular.",
-      image: "images/disenamos.webp",
+      image: "images/diseñamos.jpg",
     },
     {
       title: "Ingeniería",
       icon: <BuildIcon className="icon" />,
       description:
-        "Haciendo uso de la tecnología de simulación y el conocimiento de nuestro personal aseguramos que nuestros diseños cumplan con las especificaciones en términos de resistencia, propiedades de materiales, funcionalidad y durabilidad que usted necesita. Con el software de alta tecnología podemos llevar su pieza desde una idea hasta un producto terminado, simulado y listo para manufactura.,",
-      image: "images/inge.webp",
+        "Haciendo uso de la tecnología de simulación y el conocimiento de nuestro personal aseguramos que nuestros diseños cumplan con las especificaciones en términos de resistencia, propiedades de materiales, funcionalidad y durabilidad que usted necesita. Con el software de alta tecnología podemos llevar su pieza desde una idea hasta un producto terminado, simulado y listo para manufactura.",
+      image: "images/ingenieria.jpg",
     },
     {
       title: "Calidad",
@@ -65,7 +65,7 @@ const Diseno = () => {
       </Helmet>
 
       <Navbar />
-      <HeaderPagina titulo="Diseño" imagenFondo="Hombre-soldando.jpg" />
+      <HeaderPagina titulo="Diseño" imagenFondo="diseño.jpg" />
       <div className="design-section">
         <Typography
           style={{ marginBottom: "4%" }}

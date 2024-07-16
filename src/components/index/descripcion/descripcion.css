@@ -51,16 +51,32 @@
 .imagen1 {
     width: 250px;
 }
-  
+
+@media (max-width: 1440px) {
+    .descripcion {
+        margin: 0 10% 5%;
+    }
+}
+
 @media (max-width: 768px) {
     .descripcion {        
       flex-direction: column;
-      gap: 20px;
-      margin: 0 5% 5%;
+      margin: 0 20% 5%;
     }
 
     .caracteristica {
         margin: 8px;
         flex-basis: auto;
     }
+}
+
+@media (max-width: 480px) {
+    .descripcion {        
+        margin: 0 5% 5%;
+    }
+
+    .caracteristica h2 {
+        font-size: 22px;
+    }
+
 }

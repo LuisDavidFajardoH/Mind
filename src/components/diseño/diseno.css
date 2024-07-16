@@ -13,12 +13,13 @@
   font-weight: bold;
   margin-bottom: 16px;
   color: #333;
+  text-align: center;
 }
 
 .section-description {
   font-size: 1.2rem;
   margin-bottom: 32px;
-  text-align: center;
+  text-align: justify;
   max-width: 800px;
   color: #555;
 }
@@ -73,6 +74,7 @@
 
 .feature-description {
   color: #666666;
+  text-align: justify;
 }
 
 .additional-info {
@@ -92,4 +94,124 @@
   color: #555;
 }
 
+/* Estilos para 1440px */
+@media screen and (max-width: 1440px) {
+  .feature-container {
+    max-width: 1200px;
+  }
+
+  .feature-item.left,
+  .feature-item.right {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Estilos para 1200px */
+@media screen and (max-width: 1200px) {
+  .feature-container {
+    max-width: 1000px;
+  }
   
+  .section-description {
+    max-width: 700px;
+  }
+}
+
+/* Estilos para 1024px */
+@media screen and (max-width: 1024px) {
+  .feature-container {
+    max-width: 900px;
+  }
+  
+  .section-description {
+    max-width: 600px;
+  }
+  
+  .feature-image {
+    width: 40%;
+  }
+  
+  .feature-text {
+    width: 60%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+/* Estilos para 768px */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    max-width: 90%;
+  }
+  
+  .feature-container {
+    max-width: 90%;
+  }
+  
+  .feature-item,
+  .feature-item.left,
+  .feature-item.right {
+    flex-direction: column;
+  }
+  
+  .feature-image {
+    width: 80%;
+    margin-bottom: 16px;
+  }
+  
+  .feature-text {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .icon-container {
+    font-size: 8rem;
+  }
+}
+
+/* Estilos para 480px */
+@media screen and (max-width: 480px) {
+  .design-section {
+    padding: 16px;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-description {
+    font-size: 0.9rem;
+  }
+  
+  .feature-image {
+    width: 100%;
+  }
+  
+  .icon-container {
+    font-size: 6rem;
+  }
+  
+  .feature-title {
+    font-size: 1.2rem;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+  }
+  
+  .additional-title {
+    font-size: 1.2rem;
+  }
+  
+  .additional-description {
+    font-size: 0.9rem;
+  }
+}

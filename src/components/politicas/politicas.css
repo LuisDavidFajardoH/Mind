@@ -8,15 +8,7 @@
   overflow: hidden;
 }
 
-.sectionP {
-  text-align: center;
-  padding: 4rem 2rem;
-  margin: 2rem auto;
-  position: relative;
-  overflow: hidden;
-}
-
-.calidadP{ 
+.calidadP {
   text-align: center;
   padding: 4rem 2rem;
   margin: 2rem auto;
@@ -26,6 +18,7 @@
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
+
 .section-background {
   padding: 4rem 2rem;
   position: relative;
@@ -62,7 +55,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .objective-box {
@@ -73,8 +66,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   height: 170px;
-  width: 150px;
-  position: relative;
+  width: 100%;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .objective-box:hover {
@@ -103,7 +101,8 @@
   color: #006278;
 }
 
-.objective-box::before, .objective-box::after,
+
+
 .objective-box::before, .objective-box::after {
   content: '✖';
   position: absolute;
@@ -115,7 +114,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  
   background: linear-gradient(135deg, #ebebeb, #a1a1a1, #ebebeb);
 }
 
@@ -134,7 +132,7 @@
 .download-section {
   background: #424242ae;
   color: black;
-  padding: 1rem ;
+  padding: 1rem;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -174,14 +172,3 @@
   border: 2px solid #004d40;
 }
 
-@media (max-width: 960px) {
-  .objective-box {
-    width: calc(50% - 2rem);
-  }
-}
-
-@media (max-width: 600px) {
-  .objective-box {
-    width: calc(100% - 2rem);
-  }
-}

@@ -32,33 +32,18 @@ const Portafolio = () => {
           <p>ALGUNOS DE NUESTROS PROYECTOS</p>
           <div className="imagenes-container">
             <img
-              src={"images/proyecto1.jpg"}
-              alt="Proyecto 1"
+              src={"images/6.1 MUEBLE PORTA HERRAMIENTAS.png"}
+              alt="MUEBLE PORTA HERRAMIENTAS"
               className="proyecto-imagen"
             />
             <img
-              src={"images/proyecto2.jpg"}
-              alt="Proyecto 2"
+              src={"images/5.1 ESCALERA PLATAFORMA.png"}
+              alt="ESCALERA PLATAFORMA"
               className="proyecto-imagen"
             />
             <img
-              src={"images/proyecto3.jpg"}
-              alt="Proyecto 3"
-              className="proyecto-imagen"
-            />
-            <img
-              src={"images/proyecto4.jpg"}
-              alt="Proyecto 4"
-              className="proyecto-imagen"
-            />
-            <img
-              src={"images/proyecto5.jpg"}
-              alt="Proyecto 5"
-              className="proyecto-imagen"
-            />
-            <img
-              src={"images/proyecto6.jpg"}
-              alt="Proyecto 6"
+              src={"images/3.2 ESCALERA TIPO GATO.png"}
+              alt="ESCALERA TIPO GATO"
               className="proyecto-imagen"
             />
           </div>

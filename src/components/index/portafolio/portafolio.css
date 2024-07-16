@@ -6,19 +6,22 @@
 }
 
 .portafolio-container {
-  margin-top: 3%;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
   background-color: #f0f0f0;
+  padding: 20px;
 }
 
 .proyectos {
   text-align: center;
-  margin: 3% 15% 3%;
+  margin: 40px auto;
+  max-width: 1200px;
+  width: 90%;
 }
 
 .briefcase-button-center {
-  margin-top: 3%;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -26,14 +29,14 @@
 .briefcase-button {
   background-color: #006278;
   color: #ffffff;
-  padding: 20px 20px;
+  padding: 15px 20px;
   border-radius: 5px;
   border: none;
   transition: background-color 0.3s, color 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 17px;
+  font-size: clamp(14px, 2vw, 17px);
   cursor: pointer;
 }
 
@@ -42,25 +45,25 @@
 }
 
 .proyectos h2 {
-  font-size: 25px;
+  font-size: clamp(20px, 3vw, 25px);
   color: #006278;
-  margin-bottom: 3%;
+  margin-bottom: 40px;
 }
 
 .proyectos p {
-  font-size: 20px;
+  font-size: clamp(16px, 2.5vw, 20px);
   line-height: 1.5;
   color: #555;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .imagenes-container {
-  margin-top: 3%;
-  margin-bottom: 4%;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
 .proyecto-imagen {
@@ -71,25 +74,21 @@
   border-radius: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .proyectos {
-    margin: 20px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .portafolio-container {
+    padding: 10px;
   }
 
-  .proyectos h2 {
-    font-size: 20px;
-  }
+}
 
-  .proyectos p {
-    font-size: 16px;
+@media (max-width: 480px) {
+  .portafolio-container {
+    padding: 5px;
   }
-
-  .briefcase-button {
-    font-size: 14px;
-  }
-
-  .imagenes-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
 }
