@@ -40,6 +40,8 @@
     color: #ffffff;
     margin-bottom: 1%;
     font-size: 23px;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
 .card-proyecto-image {
@@ -54,6 +56,6 @@
     line-height: 1.2;
     color: #f0f0f0;
     text-align: justify;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 45px;
+    margin-right: 45px;
 }

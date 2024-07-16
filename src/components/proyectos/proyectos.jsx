@@ -29,64 +29,44 @@ const Proyectos = () => {
           <h2>ALGUNOS DE NUESTROS PROYECTOS</h2>
           <div className="imagenes-proyectos">
             <PlantillaProyecto
-              titulo="Canasta"
-              imagen="images/proyecto1.jpg"
-              descripcion="Canasta para izaje de personas por medio de grúa, elaborada en tubería estructural, malla, varillas y soporte para líneas de vida con armellas y argollas certificadas para 5 ton y más, y calculada acorde al peso de los ocupantes y, de condiciones de operación. Acabado de alta resistencia, que incluye proceso de limpieza con sand blasting, aplicación de recubrimiento rico en zinc, pintura epóxica y pintura poliéster electrostática con mayor duración en horas de cámara salina. Para operación en plataforma petrolera."
+              titulo="Gabinete para Telecomunicaciones"
+              imagen="images/1.4 GABINETE TELECOMUNICACIONES.png"
+              descripcion="Gabinete de diferentes dimensiones (alto, ancho y largo) para usos como disposición de tecnologías para telecomunicaciones a la intemperie. Cuenta con IP65."
             />
             <PlantillaProyecto
-              titulo="Carro"
-              imagen="images/proyecto2.jpg"
-              descripcion="Carro usado para el transporte de cilindros."
+              titulo="Escalera Tipo Avión"
+              imagen="images/2.1 ESCALERA TIPO AVIÓN.png"
+              descripcion="Escaleras de trabajo en sitios de tipo bodegaje y/o para realización de mantenimientos a determinadas alturas. Permite su desplazamiento y ubicación según se necesite."
             />
             <PlantillaProyecto
-              titulo="Estante"
-              imagen="images/proyecto3.jpg"
-              descripcion="Estante elaborado con ángulo estructural y lámina formada para usos variados, las divisiones tienen venas para aumentar su resistencia estructural e impedir que se deformen con los posibles impactos. Acabado en pintura electrostática."
+              titulo="Escalera Tipo Gato"
+              imagen="images/3.2 ESCALERA TIPO GATO.png"
+              descripcion="Escaleras cuya mayor ventaja es la optimización del espacio horizontal, entre otras. Cuenta con guardas que permiten la postura de líneas de vida, según la norma lo requiere."
             />
             <PlantillaProyecto
-              titulo="Remolque"
-              imagen="images/proyecto4.jpg"
-              descripcion="Vehículo fabricado en tubería rectangular con ejes y sistema de tiro, con guardabarros en lámina alfajor que evita el deslizamiento, se le puede colocar piso y hacer estructura de carrocería si se requiere."
+              titulo="Escalera Caracol"
+              imagen="images/4.1 ESCALERA CARACOL.png"
+              descripcion="Escalera con gran sentido estético, ideal para el aprovechamiento de espacios reducidos. Cuenta con guardas laterales, así como puertas de acceso y salida."
             />
             <PlantillaProyecto
-              titulo="Canasta"
-              imagen="images/proyecto5.jpg"
-              descripcion="Este dispositivo tiene laterales abatibles, doble altura, superficies recubiertas con espuma y una estructura que lo hace liviano, y consistente a la vez. Fue diseñado para el movimiento de partes para la industria automotriz."
+              titulo="Escalera Plataforma"
+              imagen="images/5.1 ESCALERA PLATAFORMA.png"
+              descripcion="Estructura pesada que permitir el ingreso a superficies elevadas. Ideal para la realización y subida de maquinaria y equipos pesados, debido a su estructura y alta resistencia mecánica."
             />
             <PlantillaProyecto
-              titulo="Canasta"
-              imagen="images/proyecto1.jpg"
-              descripcion="Canasta para izaje de personas por medio de grúa, elaborada en tubería estructural, malla, varillas y soporte para líneas de vida con armellas y argollas certificadas para 5 ton y más, y calculada acorde al peso de los ocupantes y, de condiciones de operación. Acabado de alta resistencia, que incluye proceso de limpieza con sand blasting, aplicación de recubrimiento rico en zinc, pintura epóxica y pintura poliéster electrostática con mayor duración en horas de cámara salina. Para operación en plataforma petrolera."
+              titulo="Mueble Porta Herramientas"
+              imagen="images/6.1 MUEBLE PORTA HERRAMIENTAS.png"
+              descripcion="Gabinete con divisiones ecualizables y deslizantes, que permiten el almacenaje de herramentales, moldes y dispositivos de peso."
             />
             <PlantillaProyecto
-              titulo="Carro"
-              imagen="images/proyecto2.jpg"
-              descripcion="Carro usado para el transporte de cilindros."
+              titulo="Poste Auxilio Vía"
+              imagen="images/7.1 POSTE AUXILIO VÍA.png"
+              descripcion="Estructura vertical con altos índices de protección a la intemperie (aguas, vientos), permitiendo su instalación en distintos puntos de la vía garantizando el cuidado de las tecnologías internas."
             />
             <PlantillaProyecto
-              titulo="Estante"
-              imagen="images/proyecto3.jpg"
-              descripcion="Estante elaborado con ángulo estructural y lámina formada para usos variados, las divisiones tienen venas para aumentar su resistencia estructural e impedir que se deformen con los posibles impactos. Acabado en pintura electrostática."
-            />
-            <PlantillaProyecto
-              titulo="Remolque"
-              imagen="images/proyecto4.jpg"
-              descripcion="Vehículo fabricado en tubería rectangular con ejes y sistema de tiro, con guardabarros en lámina alfajor que evita el deslizamiento, se le puede colocar piso y hacer estructura de carrocería si se requiere."
-            />
-            <PlantillaProyecto
-              titulo="Canasta"
-              imagen="images/proyecto5.jpg"
-              descripcion="Este dispositivo tiene laterales abatibles, doble altura, superficies recubiertas con espuma y una estructura que lo hace liviano, y consistente a la vez. Fue diseñado para el movimiento de partes para la industria automotriz."
-            />
-            <PlantillaProyecto
-              titulo="Canasta"
-              imagen="images/proyecto1.jpg"
-              descripcion="Canasta para izaje de personas por medio de grúa, elaborada en tubería estructural, malla, varillas y soporte para líneas de vida con armellas y argollas certificadas para 5 ton y más, y calculada acorde al peso de los ocupantes y, de condiciones de operación. Acabado de alta resistencia, que incluye proceso de limpieza con sand blasting, aplicación de recubrimiento rico en zinc, pintura epóxica y pintura poliéster electrostática con mayor duración en horas de cámara salina. Para operación en plataforma petrolera."
-            />
-            <PlantillaProyecto
-              titulo="Carro"
-              imagen="images/proyecto2.jpg"
-              descripcion="Carro usado para el transporte de cilindros."
+              titulo="Mueble Locker de 10 Divisiones"
+              imagen="images/8.1 LOCKER 10 DIVISIONES.png"
+              descripcion="Gabinete de distintas dimensiones, que permite el almacenaje de insumos y EPPS, según se requiera."
             />
           </div>
         </div>

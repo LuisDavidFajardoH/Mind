@@ -8,7 +8,7 @@ function PlantillaProyecto(props) {
         <div className="card-proyecto-container">
             <div className="card-proyecto">
                 <div className="card-proyecto-front">
-                    <img src={imagen} alt={titulo} className="card-proyecto-image" />
+                    <img className="card-proyecto-image" src={imagen} alt={titulo}/>
                 </div>
                 <div className="card-proyecto-back">
                     <h3>{titulo}</h3>

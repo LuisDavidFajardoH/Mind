@@ -87,11 +87,12 @@
   padding: 60px;
 }
 
-.sobrenosotros-reconocimiento h2 {
+.reconocimiento-titulo {
   margin-top: 0;
   font-size: 2em;
   font-weight: bold;
-  color: #CDA434;
+  color: #006278;
+  margin-bottom: -20px;
 }
 
 .reconocimiento-grid {
