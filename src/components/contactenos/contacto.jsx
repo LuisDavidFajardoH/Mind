@@ -76,7 +76,7 @@ const Contact = () => {
           </Box>
           <Box className="contact-image">
             <img
-              src="images/Contacto.webp"
+              src="images/contactanos.jpg"
               alt="Contact"
               className="contact-image-element"
             />
@@ -87,7 +87,7 @@ const Contact = () => {
         <Box className="mid-section">
           <Box className="mid-section-image">
             <img
-              src="images/servicios.jpg"
+              src="images/951.png"
               alt="Working"
               className="mid-image-element"
             />
