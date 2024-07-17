@@ -3,111 +3,39 @@ import Navbar from "../navbar/navbar";
 import Footer from "../index/footer/footer";
 import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp";
 import HeaderPagina from "../header-pagina/header-pagina";
-import { Container, Box, TextField, Button, Typography } from "@mui/material";
-import PersonIcon from "@mui/icons-material/Person";
-import EmailIcon from "@mui/icons-material/Email";
-import MessageIcon from "@mui/icons-material/Message";
-import Separator from "../../components/separador/divider";
-import Map from "./map/maps";
+import { Container, Box, Typography } from "@mui/material";
 import { Helmet } from "react-helmet";
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import "./contacto.css";
 
 const Contact = () => {
   return (
-    <>
+    <div>
       <Helmet>
-        <title>Contacto - Mind SAS BIC | Innovación en Metalmecánica</title>
-        <meta
-          name="description"
-          content="Contáctanos en Mind SAS BIC para más información sobre nuestros productos y servicios metalmecánicos. Estamos aquí para ayudarte con cualquier consulta que tengas."
-        />
-        <meta
-          name="keywords"
-          content="Mind SAS BIC, contacto, metalmecánica, consulta, productos de metal, servicios de metal, diseño de metal, fabricación de metal, corte de metal, doblado de metal, punzado de metal, soldadura de metal, acabados de metal, transformación de metal, soluciones de metal, industria metalmecánica, plataforma petrolera, industria automotriz"
-        />
+        <title>Contacto</title>
       </Helmet>
-
       <Navbar />
-      <HeaderPagina titulo="Contacto" imagenFondo="contactenos.jpg" />
-      <Container className="contact-container">
-        <Box className="contact-box">
-          <Box className="contact-form">
-            <Typography variant="h4" className="contact-title">
-              ¡Contáctanos!
-            </Typography>
-            <Box className="contact-input-box">
-              <PersonIcon className="contact-icon" />
-              <TextField
-                variant="outlined"
-                label="Nombre"
-                fullWidth
-                margin="normal"
-                InputLabelProps={{ className: "contact-input-label" }}
-                InputProps={{ className: "contact-input" }}
-              />
-            </Box>
-            <Box className="contact-input-box">
-              <EmailIcon className="contact-icon" />
-              <TextField
-                variant="outlined"
-                label="Correo"
-                fullWidth
-                margin="normal"
-                InputLabelProps={{ className: "contact-input-label" }}
-                InputProps={{ className: "contact-input" }}
-              />
-            </Box>
-            <Box className="contact-input-box">
-              <MessageIcon className="contact-icon" />
-              <TextField
-                variant="outlined"
-                label="Mensaje"
-                fullWidth
-                margin="normal"
-                multiline
-                rows={4}
-                InputLabelProps={{ className: "contact-input-label" }}
-                InputProps={{ className: "contact-input" }}
-              />
-            </Box>
-            <Button variant="contained" className="contact-buttonC">
-              Enviar Mensaje
-            </Button>
-          </Box>
-          <Box className="contact-image">
-            <img
-              src="images/Contacto.webp"
-              alt="Contact"
-              className="contact-image-element"
-            />
+      <HeaderPagina title="Contacto" />
+      <Container className="main-container">
+        <Box className="left-section">
+          <Typography variant="h5" className="venta-title">VENTA</Typography>
+          <Typography variant="h4" className="project-title">YAMA PUNTA MUSEO</Typography>
+          <Typography variant="body1" className="description">
+            Yama Punta Museo es un desarrollo con una propuesta de espacios equilibrados y pensados para el estilo de vida de cada integrante de la familia. La ubicación de este desarrollo es un punto clave al sur de la CDMX, localizado sobre Av. División del Norte a unos minutos de grandes vialidades como Calzada de Tlalpan, Av. Miguel Ángel de Quevedo y Periférico Sur, te permite tener acceso a los principales medios de transporte.
+          </Typography>
+          <Box className="location-box">
+            <LocationOnIcon />
+            <span className="location-text">Ver ubicación</span>
           </Box>
         </Box>
-      </Container>
-      <Container className="mid-section-container">
-        <Box className="mid-section">
-          <Box className="mid-section-image">
-            <img
-              src="images/servicios.jpg"
-              alt="Working"
-              className="mid-image-element"
-            />
-          </Box>
-          <Box className="mid-section-qr">
-            <Typography variant="h5" className="mid-section-title">
-              Queremos conocer tu opinión
-            </Typography>
-            <img src="images/Qr.png" alt="QR Code" className="mid-qr-element" />
-          </Box>
+        <Box className="separator"></Box>
+        <Box className="right-section">
+          <img src="building-image.png" alt="Yama Punta Museo" className="building-image" />
         </Box>
-      </Container>
-      <Separator />
-
-      <Container className="map-container">
-        <Map />
       </Container>
       <BotonWhatsapp />
       <Footer />
-    </>
+    </div>
   );
 };
 
