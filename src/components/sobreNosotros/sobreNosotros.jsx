@@ -95,17 +95,17 @@ const SobreNosotros = () => {
           <h2 className="reconocimiento-titulo">En Reconocimiento a su Legado, Trabajo y Compromiso</h2>
           <div className="reconocimiento-grid">
             <div className="reconocimiento-item">
-              <img src="/images/foto-cuadrada.jpg" alt="Persona 1" />
+              <img src="/images/imagen-abuela.jpeg" alt="María Rosalba Acevedo" />
               <h1>María Rosalba Acevedo</h1>
               <p>Fundadora</p>
             </div>
             <div className="reconocimiento-item">
-              <img src="/images/imagen-papa.jpg" alt="Persona 2" />
+              <img src="/images/imagen-papa.jpg" alt="Hernando Sánchez" />
               <h1>Hernando Sánchez</h1>
               <p>Colaborador</p>
             </div>
             <div className="reconocimiento-item">
-              <img src="/images/imagen-mama.jpg" alt="Persona 3" />
+              <img src="/images/imagen-mama.jpg" alt="Gabriela Rueda Acevedo" />
               <h1>Gabriela Rueda Acevedo</h1>
               <p>Directora junta directíva y actual dueña</p>
             </div>
