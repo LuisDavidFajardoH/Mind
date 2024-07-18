@@ -67,7 +67,7 @@ const Proyectos = () => {
             <PlantillaProyecto
               titulo="Escalera Plataforma"
               portada="images/5.1 ESCALERA PLATAFORMA.png"
-              descripcion="Estructura pesada que permitir el ingreso a superficies elevadas. Ideal para la realización y subida de maquinaria y equipos pesados, debido a su estructura y alta resistencia mecánica."
+              descripcion="Estructura pesada que permite el ingreso a superficies elevadas. Ideal para la realización y subida de maquinaria y equipos pesados, debido a su estructura y alta resistencia mecánica."
               imagen1="images/5.1 ESCALERA PLATAFORMA.png"
               imagen2="images/5.2 ESCALERA PLATAFORMA.png"
               imagen3="images/5.3 ESCALERA PLATAFORMA.png"
