@@ -21,9 +21,8 @@ const Proyectos = () => {
           content="Mind SAS BIC, proyectos metalmecánicos, canasta para izaje, carro para cilindros, estante estructural, remolque, soluciones de metal, metalmecánica, innovación en metal, plataforma petrolera, industria automotriz, tubería estructural, malla metálica, varillas, soporte para líneas de vida, armellas, argollas certificadas, recubrimiento rico en zinc, pintura epóxica, pintura poliéster electrostática, limpieza con sand blasting, vehículo con ejes, sistema de tiro, guardabarros, lámina alfajor, diseño de metal, fabricación de metal, transporte de cilindros, acabados de alta resistencia"
         />
       </Helmet>
-
       <Navbar />
-      <HeaderPagina titulo="Proyectos" imagenFondo="Proyectos.jpg" />
+      <HeaderPagina titulo="Proyectos" imagenFondo="proyectos.jpg" />
       <div className="proyectos-pagina">
         <div className="proyectos-container">
           <h2>ALGUNOS DE NUESTROS PROYECTOS</h2>
