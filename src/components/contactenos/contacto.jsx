@@ -28,7 +28,7 @@ const Contact = () => {
           </Typography>
           <Box className="location-box">
             <LocationOnIcon />
-            <span className="location-text">Ver ubicación</span>
+            <span href="https://www.instagram.com" target="_blank" className="location-text">Ver ubicación</span>
           </Box>
           <Card className="social-card">
             <CardContent>
