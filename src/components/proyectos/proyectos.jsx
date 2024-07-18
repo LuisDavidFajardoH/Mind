@@ -23,7 +23,7 @@ const Proyectos = () => {
       </Helmet>
 
       <Navbar />
-      <HeaderPagina titulo="Proyectos" imagenFondo="Proyectos.jpg" />
+      <HeaderPagina titulo="Proyectos" imagenFondo="proyectos.jpg" />
       <div className="proyectos-pagina">
         <div className="proyectos-container">
           <h2>ALGUNOS DE NUESTROS PROYECTOS</h2>
