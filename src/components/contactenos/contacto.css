@@ -1,9 +1,10 @@
+/* Estilos actuales */
 .main-container {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   background-color: #f9f9f9;
   padding: 20px;
+  position: relative;
   margin-top: 3%;
   border-radius: 1%;
   margin-bottom: 3%;
@@ -11,15 +12,14 @@
 }
 
 .left-section {
-  width: 100%;
+  width: 60%;
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 5%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
 }
 
 .venta-title {
@@ -53,18 +53,24 @@
 }
 
 .right-section {
-  width: 100%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  padding: 20px;
 }
 
 .building-image {
-  width: 100%;
+  width: 80%;
   height: auto;
   display: block;
+  margin-top: 10%;
   border-radius: 5%;
+  margin-left: 25%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -115,15 +121,14 @@
 
 .info-content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
   width: 100%;
 }
 
 .info-section {
   text-align: center;
   flex: 1;
-  margin: 10px 0;
+  margin: 0 10px;
 }
 
 .info-title {
@@ -132,25 +137,174 @@
   color: #006278;
 }
 
-@media (min-width: 768px) {
+/* Media Queries para responsive design */
+@media (max-width: 1024px) {
   .main-container {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
   }
 
   .left-section, .right-section {
-    width: 50%;
+    width: 80%;
+    position: static;
+    margin-bottom: 20px;
   }
 
-  .right-section {
-    padding-left: 20px;
+  .building-image {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .info-container {
+    width: 80%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-card {
+    flex-direction: column;
+    align-items: center;
   }
 
   .info-content {
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
   }
 
   .info-section {
-    margin: 0 10px;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-section, .right-section {
+    width: 90%;
+  }
+
+  .left-section {
+    padding: 20px;
+  }
+
+  .right-section {
+    padding: 10px;
+  }
+
+  .building-image {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .info-container {
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-content {
+    flex-direction: column;
+  }
+
+  .info-section {
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .left-section {
+    padding: 10px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .building-image {
+    width: 100%;
+  }
+
+  .info-container {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-content {
+    flex-direction: column;
+  }
+
+  .info-section {
+    margin: 5px 0;
+  }
+
+  .info-title {
+    font-size: 16px;
+  }
+}
+
+/* Ajustes específicos para iPhone 12 */
+@media (max-width: 390px) {
+  .main-container {
+    padding: 10px;
+  }
+
+  .left-section, .right-section {
+    width: 100%;
+  }
+
+  .left-section {
+    padding: 10px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .building-image {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .info-container {
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .info-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-content {
+    flex-direction: column;
+  }
+
+  .info-section {
+    margin: 5px 0;
+  }
+
+  .info-title {
+    font-size: 16px;
   }
 }
