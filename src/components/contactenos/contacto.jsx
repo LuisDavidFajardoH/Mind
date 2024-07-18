@@ -24,20 +24,20 @@ const Contact = () => {
           <Typography variant="h5" className="venta-title">Contactanos</Typography>
           <Typography variant="h4" className="project-title">MIND SAS</Typography>
           <Typography variant="body1" className="description">
-            Yama Punta Museo es un desarrollo con una propuesta de espacios equilibrados y pensados para el estilo de vida de cada integrante de la familia. La ubicación de este desarrollo es un punto clave al sur de la CDMX, localizado sobre Av. División del Norte a unos minutos de grandes vialidades como Calzada de Tlalpan, Av. Miguel Ángel de Quevedo y Periférico Sur, te permite tener acceso a los principales medios de transporte.
+          En MIND SAS, con más de 25 años de experiencia en el sector metalmecánico colombiano, diseñamos y desarrollamos soluciones a partir de sus necesidades. Con una capacidad productiva avanzada y un sistema de gestión de calidad certificado según la ISO 9001:2015 por Bureau Veritas Certification, estamos listos para transformar sus ideas en realidad. ¡Visítenos en Av. Américas Calle 20 # 39 – 35, Bogotá D.C. o agende su cita hoy mismo al (+57) 311 289 7588!
           </Typography>
           <Box className="location-box">
             <LocationOnIcon />
-            <span href="https://www.instagram.com" target="_blank" className="location-text">Ver ubicación</span>
+            <a href="https://maps.app.goo.gl/HvCYpJ1PQymHbyez6" target="_blank" class="location-text">Ver ubicación</a>
           </Box>
           <Card className="social-card">
             <CardContent>
               <Typography variant="h6" className="social-title">Síguenos en:</Typography>
               <Box className="social-icons">
-                <IconButton href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <IconButton href="https://www.instagram.com/metalmind.sas_bic/" target="_blank" rel="noopener noreferrer">
                   <InstagramIcon />
                 </IconButton>
-                <IconButton href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <IconButton href="https://www.facebook.com/MINDSASBIC" target="_blank" rel="noopener noreferrer">
                   <FacebookIcon />
                 </IconButton>
                 <IconButton href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
