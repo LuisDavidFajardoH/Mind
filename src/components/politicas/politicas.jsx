@@ -131,7 +131,7 @@ const Politicas = () => {
                 href={politicasTratamientoPDF}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="download-button animate__animated animate__pulse animate__infinite"
+                className="download-button "
               >
                 Políticas de Tratamiento
               </a>

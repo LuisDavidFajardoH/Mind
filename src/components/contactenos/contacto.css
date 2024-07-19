@@ -29,15 +29,15 @@
 
 .cta {
   margin-top: 4%;
-  margin-bottom: -6%;
+  margin-bottom: -5%;
   position: relative;
   z-index: 2;
 }
 
-.cta-button {
+.cta-buttonC {
   width: 150px;
   height: 150px;
-  background-color: #e60000;
+  background-color: #006278;
   color: white;
   border: none;
   border-radius: 50%;
@@ -54,7 +54,7 @@
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 rgba(21, 45, 167, 0.516);
+    box-shadow: 0 0 0 0 rgba(0, 28, 169, 0.516);
   }
   30% {
     box-shadow: 0 0 0 20px rgba(230, 0, 0, 0);
@@ -78,7 +78,7 @@
   width: 100%;
   max-width: 800px;
   margin: 40px 0;
-  padding: 10px 10px; /* Ajusta el padding según el tamaño del rectángulo */
+  padding: 10px 40px; /* Ajusta el padding según el tamaño del rectángulo */
   background-color: #7272723b; /* Color azul */
   border-radius: 8px; /* Bordes redondeados (opcional) */
 }
@@ -134,7 +134,7 @@
     font-size: 16px;
   }
 
-  .cta-button {
+  .cta-buttonC {
     width: 130px;
     height: 130px;
     font-size: 14px;
@@ -173,7 +173,7 @@
     font-size: 14px;
   }
 
-  .cta-button {
+  .cta-buttonC {
     width: 120px;
     height: 120px;
     font-size: 12px;
@@ -212,7 +212,7 @@
     font-size: 12px;
   }
 
-  .cta-button {
+  .cta-buttonC {
     width: 100px;
     height: 100px;
     font-size: 10px;

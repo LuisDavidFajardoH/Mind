@@ -34,7 +34,7 @@ const ContactUs = () => {
         <img src="/images/contactanos.jpg" alt="Imagen descriptiva" className="descriptive-image" />
         <Separator />
         <div className="cta">
-          <button className="cta-button" onClick={handleButtonClick}>Empezemos</button>
+          <button className="cta-buttonC" onClick={handleButtonClick}>Empecemos</button>
         </div>
         <div className="contact-info-container">
           <div className="contact-info">

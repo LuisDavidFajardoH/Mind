@@ -96,8 +96,6 @@
   width: auto;
 }
 
-/* Otros estilos permanecen iguales */
-
 @media (max-width: 768px) {
   .content {
     flex-direction: column;
