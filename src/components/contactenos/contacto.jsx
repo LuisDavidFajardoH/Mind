@@ -25,7 +25,7 @@ const ContactUs = () => {
       <HeaderPagina titulo="Contacto" imagenFondo="contactenos.jpg" />
       <div className="contact-us-container">
         <h1 className="greeting">Hola</h1>
-        <p className="description">
+        <p className="description" style={{alignItems:""}} >
           En MIND SAS, con más de 25 años de experiencia en el sector metalmecánico colombiano, 
           diseñamos y desarrollamos soluciones a partir de sus necesidades. Con una capacidad 
           productiva avanzada y un sistema de gestión de calidad certificado según la ISO 9001:2015 

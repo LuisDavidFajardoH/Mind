@@ -2,7 +2,7 @@
   font-family: 'Frutiger LT Pro';
   src: url('/fonts/FrutigerLTPro-Regular.woff2') format('woff2'),
        url('/fonts/FrutigerLTPro-Regular.woff') format('woff');
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -10,7 +10,7 @@
   font-family: 'Frutiger LT Pro';
   src: url('/fonts/FrutigerLTPro-Light.woff2') format('woff2'),
        url('/fonts/FrutigerLTPro-Light.woff') format('woff');
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -18,7 +18,7 @@
   font-family: 'Frutiger LT Pro';
   src: url('/fonts/FrutigerLTPro-Bold.woff2') format('woff2'),
        url('/fonts/FrutigerLTPro-Bold.woff') format('woff');
-  font-weight: 700;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -26,7 +26,7 @@
   font-family: 'Frutiger LT Pro';
   src: url('/fonts/FrutigerLTPro-Italic.woff2') format('woff2'),
        url('/fonts/FrutigerLTPro-Italic.woff') format('woff');
-  font-weight: 400;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -34,7 +34,7 @@
   font-family: 'Frutiger LT Pro';
   src: url('/fonts/FrutigerLTPro-LightItalic.woff2') format('woff2'),
        url('/fonts/FrutigerLTPro-LightItalic.woff') format('woff');
-  font-weight: 300;
+  font-weight: 600;
   font-style: italic;
 }
 
@@ -42,7 +42,7 @@
   font-family: 'Frutiger LT Pro';
   src: url('/fonts/FrutigerLTPro-BoldItalic.woff2') format('woff2'),
        url('/fonts/FrutigerLTPro-BoldItalic.woff') format('woff');
-  font-weight: 700;
+  font-weight: 900;
   font-style: italic;
 }
 
