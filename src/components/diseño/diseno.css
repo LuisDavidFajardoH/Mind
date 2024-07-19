@@ -9,7 +9,7 @@
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2.8rem; /* Tamaño de fuente mayor */
   font-weight: bold;
   margin-bottom: 16px;
   color: #333;
@@ -17,11 +17,11 @@
 }
 
 .section-description {
-  font-size: 1.2rem;
   margin-bottom: 32px;
   text-align: justify;
   max-width: 800px;
   color: #555;
+  font-size: 1.4rem; /* Tamaño de fuente mayor */
 }
 
 .feature-container {
@@ -59,6 +59,7 @@
   margin-left: 20%;
   margin-right: 20%;
   text-align: center;
+  font-size: 1.4rem; /* Tamaño de fuente mayor */
 }
 
 .icon-container {
@@ -70,11 +71,13 @@
 .feature-title {
   font-weight: bold;
   color: #333;
+  font-size: 2.8rem; /* Tamaño de fuente mayor */
 }
 
 .feature-description {
   color: #666666;
   text-align: justify;
+  font-size: 1.6rem; /* Tamaño de fuente mayor */
 }
 
 .additional-info {
@@ -88,10 +91,12 @@
   font-weight: bold;
   margin-bottom: 16px;
   color: #333;
+  font-size: 2.4rem; /* Tamaño de fuente mayor */
 }
 
 .additional-description {
   color: #555;
+  font-size: 1.4rem; /* Tamaño de fuente mayor */
 }
 
 /* Estilos para 1440px */
@@ -113,9 +118,26 @@
   .feature-container {
     max-width: 1000px;
   }
-  
+
   .section-description {
     max-width: 700px;
+    font-size: 1.3rem; /* Ajuste del tamaño del texto de la descripción */
+  }
+
+  .feature-title {
+    font-size: 2.6rem; /* Ajuste del tamaño del texto del título de la característica */
+  }
+
+  .feature-description {
+    font-size: 1.5rem; /* Ajuste del tamaño del texto de la descripción de la característica */
+  }
+
+  .additional-title {
+    font-size: 2.2rem; /* Ajuste del tamaño del texto del título adicional */
+  }
+
+  .additional-description {
+    font-size: 1.3rem; /* Ajuste del tamaño del texto de la descripción adicional */
   }
 }
 
@@ -124,56 +146,91 @@
   .feature-container {
     max-width: 900px;
   }
-  
+
   .section-description {
     max-width: 600px;
+    font-size: 1.2rem; /* Ajuste del tamaño del texto de la descripción */
   }
-  
+
   .feature-image {
     width: 40%;
   }
-  
+
   .feature-text {
     width: 60%;
     margin-left: 10%;
     margin-right: 10%;
+    font-size: 1.2rem; /* Ajuste del tamaño del texto de la característica */
+  }
+
+  .feature-title {
+    font-size: 2.4rem; /* Ajuste del tamaño del texto del título de la característica */
+  }
+
+  .feature-description {
+    font-size: 1.4rem; /* Ajuste del tamaño del texto de la descripción de la característica */
+  }
+
+  .additional-title {
+    font-size: 2rem; /* Ajuste del tamaño del texto del título adicional */
+  }
+
+  .additional-description {
+    font-size: 1.2rem; /* Ajuste del tamaño del texto de la descripción adicional */
   }
 }
 
 /* Estilos para 768px */
 @media screen and (max-width: 768px) {
   .section-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-  
+
   .section-description {
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 90%;
   }
-  
+
   .feature-container {
     max-width: 90%;
   }
-  
+
   .feature-item,
   .feature-item.left,
   .feature-item.right {
     flex-direction: column;
   }
-  
+
   .feature-image {
     width: 80%;
     margin-bottom: 16px;
   }
-  
+
   .feature-text {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    font-size: 1rem; /* Ajuste del tamaño del texto de la característica */
   }
-  
+
   .icon-container {
     font-size: 8rem;
+  }
+
+  .feature-title {
+    font-size: 2rem; /* Ajuste del tamaño del texto del título de la característica */
+  }
+
+  .feature-description {
+    font-size: 1.2rem; /* Ajuste del tamaño del texto de la descripción de la característica */
+  }
+
+  .additional-title {
+    font-size: 1.8rem; /* Ajuste del tamaño del texto del título adicional */
+  }
+
+  .additional-description {
+    font-size: 1.1rem; /* Ajuste del tamaño del texto de la descripción adicional */
   }
 }
 
@@ -182,36 +239,36 @@
   .design-section {
     padding: 16px;
   }
-  
+
   .section-title {
     font-size: 1.8rem;
   }
-  
+
   .section-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
-  
+
   .feature-image {
     width: 100%;
   }
-  
+
   .icon-container {
     font-size: 6rem;
   }
-  
+
   .feature-title {
-    font-size: 1.2rem;
+    font-size: 1.8rem; /* Ajuste del tamaño del texto del título de la característica */
   }
-  
+
   .feature-description {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Ajuste del tamaño del texto de la descripción de la característica */
   }
-  
+
   .additional-title {
-    font-size: 1.2rem;
+    font-size: 1.6rem; /* Ajuste del tamaño del texto del título adicional */
   }
-  
+
   .additional-description {
-    font-size: 0.9rem;
+    font-size: 1rem; /* Ajuste del tamaño del texto de la descripción adicional */
   }
 }
