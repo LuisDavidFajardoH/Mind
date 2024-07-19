@@ -16,7 +16,7 @@ const Footer = () => {
           <h4>Siguenos</h4>
           <div className="red-social">
             <a href="https://www.facebook.com/MINDSASBIC" target="_blank"><FacebookFill strokeWidth={2} size={28}/></a>
-            <a href="https://www.linkedin.com" target="_blank"><LinkedinBoxFill strokeWidth={2} size={30}/></a>
+            <a href="https://co.linkedin.com/company/mind-sas-bic" target="_blank"><LinkedinBoxFill strokeWidth={2} size={30}/></a>
             <a href="https://www.instagram.com/metalmind.sas_bic/" target="_blank"><InstagramFill strokeWidth={2} size={30}/></a>
           </div>
         </div>
