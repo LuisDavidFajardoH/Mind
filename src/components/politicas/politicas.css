@@ -87,10 +87,6 @@
   transition: color 0.3s ease;
 }
 
-.objective-box:hover svg {
-  color: #004d40;
-}
-
 .objective-box .text {
   font-size: 1rem;
   color: #333;
@@ -100,8 +96,6 @@
 .objective-box:hover .text {
   color: #006278;
 }
-
-
 
 .objective-box::before, .objective-box::after {
   content: '✖';
@@ -130,8 +124,7 @@
 /* Download Section Styles */
 
 .download-section {
-  background: #424242ae;
-  color: black;
+  background: #bbbbbb;
   padding: 1rem;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -147,7 +140,7 @@
 .download-section .title {
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  color: white;
+  color: #006278;
 }
 
 .download-box {
@@ -158,9 +151,8 @@
 .download-button {
   padding: 12px 30px;
   font-size: 1.2rem;
-  background-color: #ffffff;
-  color: #006278;
-  border: 2px solid #ffffff;
+  background-color: #006278;
+  color: #ffffff;
   border-radius: 4px;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -168,8 +160,7 @@
 }
 
 .download-button:hover {
-  background-color: #004d40;
+  background-color: #555;
   color: white;
-  border: 2px solid #004d40;
 }
 
