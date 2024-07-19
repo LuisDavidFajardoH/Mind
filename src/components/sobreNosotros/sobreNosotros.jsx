@@ -107,7 +107,7 @@ const SobreNosotros = () => {
             <div className="reconocimiento-item">
               <img src="/images/imagen-mama.jpg" alt="Gabriela Rueda Acevedo" />
               <h1>Gabriela Rueda Acevedo</h1>
-              <p>Directora junta directíva y actual dueña</p>
+              <p>Directora junta directíva</p>
             </div>
           </div>
         </section>
