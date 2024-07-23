@@ -42,11 +42,11 @@ const Header = () => {
       <header className="header">
         <div className="video-container">
           <video autoPlay loop muted playsInline className="video-background desktop-video">
-            <source src="/images/video-horizontal.mp4" type="video/mp4" />
+            <source src="/images/video-horizontall.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
           <video autoPlay loop muted playsInline className="video-background mobile-video">
-            <source src="/images/video-verticall.mp4" type="video/mp4" />
+            <source src="/images/video-vertical.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

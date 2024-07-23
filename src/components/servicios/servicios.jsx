@@ -14,7 +14,7 @@ import recomendacionesPDF from './Recomendaciones.pdf';
 
 const services = [
   {
-    icon: "/images/servicio-diseño.jpg",
+    icon: "/images/servicio-diseno.jpg",
     title: "Diseño",
     description:
       "Nuestros servicios de diseño incluyen creación de logotipos, diseño de páginas web, y más.",
