@@ -53,7 +53,7 @@ const Diseno = () => {
   return (
     <>
       <Helmet>
-      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
+        <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Diseño - Mind SAS BIC | Innovación en Metalmecánica</title>
         <meta
           name="description"
@@ -94,11 +94,6 @@ const Diseno = () => {
               key={index}
               data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
             >
-              <img
-                src={feature.image}
-                alt={feature.title}
-                className="feature-image"
-              />
               <div className="feature-text">
                 <div style={{ fontSize: "0rem" }} className="icon-container">
                   {feature.icon}
@@ -119,6 +114,11 @@ const Diseno = () => {
                   {feature.description}
                 </Typography>
               </div>
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="feature-image"
+              />
             </div>
           ))}
         </div>

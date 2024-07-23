@@ -20,14 +20,14 @@ const ContactUs = () => {
     <>
       <Helmet>
       <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
-        <title>Contacto | MIND SAS</title>
+        <title>Contacto | MIND SAS BIC</title>
       </Helmet>
       <Navbar />
       <HeaderPagina titulo="Contacto" imagenFondo="contactenos.jpg" />
       <div className="contact-us-container">
         <h1 className="greeting">Hola</h1>
         <p className="description" style={{alignItems:""}} >
-          En MIND SAS, con más de 25 años de experiencia en el sector metalmecánico colombiano, 
+          En MIND SAS BIC, con más de 25 años de experiencia en el sector metalmecánico colombiano, 
           diseñamos y desarrollamos soluciones a partir de sus necesidades. Con una capacidad 
           productiva avanzada y un sistema de gestión de calidad certificado según la ISO 9001:2015 
           por Bureau Veritas Certification, estamos listos para transformar sus ideas en realidad.

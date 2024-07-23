@@ -10,12 +10,12 @@ const Map = () => {
     const marker = new window.google.maps.Marker({
       position: { lat: 4.6254441, lng: -74.0950915 }, // Coordenadas específicas del marcador
       map,
-      title: 'Mind SAS',
+      title: 'Mind SAS BIC',
     });
 
     const infowindowContent = `
       <div∫>
-        <h3 style="margin: 0 0 10px; font-size: 18px; color: black;">Mind SAS</h3>
+        <h3 style="margin: 0 0 10px; font-size: 18px; color: black;">Mind BIC SAS</h3>
         <p style="margin: 0; font-size: 14px;"><strong>Dirección:</strong> Av. de las Américas, Bogotá</p>
         <p style="margin: 5px 0; font-size: 14px;"><strong>Teléfono:</strong> +57 3112897588</p>
         <p style="margin: 5px 0; font-size: 14px;"><strong>Email:</strong> <a href="mailto:info@metalmindsa.com" style="color: #1a73e8;">contacto@mindsas.com</a></p>
