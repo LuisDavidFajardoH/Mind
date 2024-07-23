@@ -23,6 +23,27 @@
   color: #006278;
 }
 
+.filter-buttons {
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 2px solid #006278;
+  color: #006278;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-buttons button:hover,
+.filter-buttons button.active {
+  background-color: #006278;
+  color: #ffffff;
+}
+
 .imagenes-proyectos {
   margin-top: 4%;
   margin-bottom: 4%;
@@ -42,23 +63,18 @@
 }
 
 @media (max-width: 1540px) {
-
   .imagenes-proyectos {
     grid-template-columns: repeat(3, 1fr);
   }
-
 }
 
 @media (max-width: 1176px) {
-
   .imagenes-proyectos {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (max-width: 768px) {
-
   .proyectos-container h2 {
     margin-top: 5%;
     font-size: 20px;
@@ -70,4 +86,14 @@
     margin-bottom: 10%;
   }
 
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter-buttons button {
+    margin: 5px 0;
+    width: 80%;
+  }
 }
