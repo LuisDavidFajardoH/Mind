@@ -119,8 +119,8 @@ const Proyectos = () => {
           <div className="filter-buttons">
             <button onClick={() => setFilter("todos")} className={filter === "todos" ? "active" : ""}>Todos</button>
             <button onClick={() => setFilter("escaleras")} className={filter === "escaleras" ? "active" : ""}>Escaleras</button>
-            <button onClick={() => setFilter("gabinetes")} className={filter === "gabinetes" ? "active" : ""}>Gabinetes</button>
             <button onClick={() => setFilter("muebles")} className={filter === "muebles" ? "active" : ""}>Muebles</button>
+            <button onClick={() => setFilter("gabinetes")} className={filter === "gabinetes" ? "active" : ""}>Gabinetes</button>            
             <button onClick={() => setFilter("otros")} className={filter === "otros" ? "active" : ""}>Otros</button>
           </div>
           <div className="imagenes-proyectos">
