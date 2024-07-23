@@ -23,12 +23,12 @@ const Proyectos = () => {
     },
     {
       titulo: "Escalera Tipo Avión",
-      portada: "images/2.1 ESCALERA TIPO AVIÓN.png",
+      portada: "images/2.1 ESCALERA TIPO AVION.png",
       descripcion: "Escaleras de trabajo en sitios de tipo bodegaje y/o para realización de mantenimientos a determinadas alturas. Permite su desplazamiento y ubicación según se necesite.",
-      imagen1: "images/2.1 ESCALERA TIPO AVIÓN.png",
-      imagen2: "images/2.2 ESCALERA TIPO AVIÓN.png",
-      imagen3: "images/2.3 ESCALERA TIPO AVIÓN.png",
-      imagen4: "images/2.4 ESCALERA TIPO AVIÓN.png",
+      imagen1: "images/2.1 ESCALERA TIPO AVION.png",
+      imagen2: "images/2.2 ESCALERA TIPO AVION.png",
+      imagen3: "images/2.3 ESCALERA TIPO AVION.png",
+      imagen4: "images/2.4 ESCALERA TIPO AVION.png",
       categoria: "escaleras"
     },
     {
@@ -73,12 +73,12 @@ const Proyectos = () => {
     },
     {
       titulo: "Poste Auxilio Vía",
-      portada: "images/7.1 POSTE AUXILIO VÍA.png",
+      portada: "images/7.1 POSTE AUXILIO VIA.png",
       descripcion: "Estructura vertical con altos índices de protección a la intemperie (aguas, vientos), permitiendo su instalación en distintos puntos de la vía garantizando el cuidado de las tecnologías internas.",
-      imagen1: "images/7.1 POSTE AUXILIO VÍA.png",
-      imagen2: "images/7.2 POSTE AUXILIO VÍA.png",
-      imagen3: "images/7.3 POSTE AUXILIO VÍA.png",
-      imagen4: "images/7.4 POSTE AUXILIO VÍA.png",
+      imagen1: "images/7.1 POSTE AUXILIO VIA.png",
+      imagen2: "images/7.2 POSTE AUXILIO VIA.png",
+      imagen3: "images/7.3 POSTE AUXILIO VIA.png",
+      imagen4: "images/7.4 POSTE AUXILIO VIA.png",
       categoria: "otros"
     },
     {

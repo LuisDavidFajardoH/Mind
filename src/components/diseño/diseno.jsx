@@ -32,7 +32,7 @@ const Diseno = () => {
       icon: <DesignServicesIcon className="icon" />,
       description:
         "A partir de sus necesidades generamos ideas y conceptos que luego transformamos en diseños innovadores que respondan a su situación particular.",
-      image: "images/diseñamos.jpg",
+      image: "images/disenamos.jpg",
     },
     {
       title: "Ingeniería",
@@ -66,7 +66,7 @@ const Diseno = () => {
       </Helmet>
 
       <Navbar />
-      <HeaderPagina titulo="Diseño" imagenFondo="diseño.jpg" />
+      <HeaderPagina titulo="Diseño" imagenFondo="diseno.jpg" />
       <div className="design-section">
         <Typography
           style={{ marginBottom: "4%" }}
