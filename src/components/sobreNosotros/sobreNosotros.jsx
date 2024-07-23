@@ -15,6 +15,7 @@ const SobreNosotros = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>
           Sobre Nosotros - Mind SAS BIC | Innovación en Metalmecánica
         </title>

@@ -27,6 +27,7 @@ const Header = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Inicio - Piezas de Metal, Piezas de Futuro | Mind</title>
         <meta
           name="description"

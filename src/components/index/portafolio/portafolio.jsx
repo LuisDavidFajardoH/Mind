@@ -11,6 +11,7 @@ const Portafolio = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Portafolio - Proyectos y Soluciones de Metal | Mind</title>
         <meta
           name="description"

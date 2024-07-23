@@ -53,6 +53,7 @@ const Diseno = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Diseño - Mind SAS BIC | Innovación en Metalmecánica</title>
         <meta
           name="description"

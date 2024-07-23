@@ -11,6 +11,7 @@ const Proyectos = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Proyectos - Mind SAS BIC | Innovación en Metalmecánica</title>
         <meta
           name="description"

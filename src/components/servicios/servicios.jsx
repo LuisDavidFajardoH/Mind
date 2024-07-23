@@ -103,6 +103,7 @@ const ServiciosComponent = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>
           Servicios y Materiales - Mind SAS BIC | Innovación en Metalmecánica
         </title>

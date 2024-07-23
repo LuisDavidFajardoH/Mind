@@ -61,6 +61,7 @@ const Informacion = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Información - Nuestra Empresa, Misión y Visión | Mind</title>
         <meta
           name="description"

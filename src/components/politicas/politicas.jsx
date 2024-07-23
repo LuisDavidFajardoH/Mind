@@ -55,6 +55,7 @@ const Politicas = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Política de Calidad - Mind SAS BIC | Metalmecánica</title>
         <meta
           name="description"

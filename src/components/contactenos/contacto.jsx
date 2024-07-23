@@ -19,6 +19,7 @@ const ContactUs = () => {
   return (
     <>
       <Helmet>
+      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Contacto | MIND SAS</title>
       </Helmet>
       <Navbar />
