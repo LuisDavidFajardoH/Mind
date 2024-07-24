@@ -3,7 +3,7 @@ import "./plantilla-proyecto.css";
 import PlantillaCarrusel from "./plantilla-carrusel/plantilla-carrusel";
 
 function PlantillaProyecto(props) {
-    const {portada, titulo, descripcion, imagen1, imagen2, imagen3, imagen4} = props;
+    const {portada, titulo, descripcion, imagen1, imagen2, imagen3, imagen4, resetKey} = props;
     const [isFlipped, setIsFlipped] = useState(false);
     const [containerHeight, setContainerHeight] = useState('420px');
     const backRef = useRef(null);
@@ -15,6 +15,11 @@ function PlantillaProyecto(props) {
             setContainerHeight('420px');
         }
     }, [isFlipped]);
+
+    useEffect(() => {
+        setIsFlipped(false);
+        setContainerHeight('420px');
+    }, [resetKey]);
 
     const handleFlip = () => {
         setIsFlipped(!isFlipped);
