@@ -5,6 +5,8 @@
   padding: 50px 20px;
   text-align: center;
   position: relative;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .greeting {

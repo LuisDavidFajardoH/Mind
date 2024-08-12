@@ -17,7 +17,7 @@ const services = [
     icon: "/images/servicio-diseno.jpg",
     title: "Diseño",
     description:
-      "Nuestros servicios de diseño incluyen creación de logotipos, diseño de páginas web, y más.",
+      "Realizamos cualquier tipo de diseño en metal, adaptado a tus necesidades y requerimientos.",
   },
   {
     icon: "/images/servicio-corte.jpg",
@@ -27,27 +27,27 @@ const services = [
   },
   {
     icon: "/images/servicio-punzado.jpg",
-    title: "Punzado",
+    title: "Punzonado",
     description:
-      "Ofrecemos servicios de punzado con alta precisión y eficiencia.",
+      "Ofrecemos servicios de punzonado con alta precisión y eficiencia.",
   },
   {
     icon: "/images/servicio-doblado.jpg",
     title: "Doblado",
     description:
-      "Servicios de doblado y curvado de materiales con estándares de calidad.",
+      "Servicios de doblez y curvado de materiales con geometrías de diferentes características.",
   },
   {
     icon: "/images/servicio-soldadura.jpg",
     title: "Soldadura",
     description:
-      "Realizamos soldadura MIG, TIG, Punto, garantizando durabilidad y resistencia.",
+      "Ofrecemos procesos MIG, TIG, Punto, ajustado a la aplicación de materiales y fabricaciones requeridos.",
   },
   {
     icon: "/images/servicio-acabado.jpg",
     title: "Acabado",
     description:
-      "Ofrecemos servicios de acabado y pintura para un toque final perfecto.",
+      "Nuestros acabados se llevan a cabo usando pintura electrostática mediante un horno de 6,00 mts x 1,80 mts de alto x 1,35 mts de ancho, para un toque final perfecto.",
   },
 ];
 
@@ -62,7 +62,7 @@ const materials = [
     icon: "/images/material-perfiles.jpg",
     title: "Perfiles",
     description:
-      "Fabricamos perfiles de diferentes formas y tamaños, personalizados para tu proyecto.",
+      "Utilizamos y fabricamos perfiles de diferentes formas y tamaños, personalizados para tu proyecto.",
   },
   {
     icon: "/images/material-acero.jpg",

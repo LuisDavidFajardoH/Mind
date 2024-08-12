@@ -53,7 +53,7 @@ const Header = () => {
         <div className="content">
           <div className="header-text">
             <h1>Mind</h1>
-            <p>Piezas de Metal, Piezas de Futuro</p>
+            <p>Más de 30 años realizando proyectos metálicos a tu medida</p>
             <button className="btn-primary">Contáctanos</button>
           </div>
           <div className="logo-background">
