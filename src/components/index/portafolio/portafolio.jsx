@@ -10,18 +10,7 @@ const Portafolio = () => {
 
   return (
     <>
-      <Helmet>
-      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
-        <title>Portafolio - Proyectos y Soluciones de Metal | Mind</title>
-        <meta
-          name="description"
-          content="Explora nuestro portafolio de proyectos y soluciones de metal. Con más de 30 años de experiencia apoyando al sector industrial colombiano."
-        />
-        <meta
-          name="keywords"
-          content="Mind, portafolio, proyectos, soluciones de metal, sector industrial colombiano, desarrollo de metal, metalmecanica"
-        />
-      </Helmet>
+      
 
       <div className="portafolio-container">
         <div className="proyectos">

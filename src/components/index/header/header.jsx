@@ -16,9 +16,12 @@ const Header = () => {
       console.error("Error loading video");
     }
 
+    // Cleanup function to remove event listeners
     return () => {
-      if (videoDesktop && videoMobile) {
+      if (videoDesktop) {
         videoDesktop.removeEventListener("error", handleVideoError);
+      }
+      if (videoMobile) {
         videoMobile.removeEventListener("error", handleVideoError);
       }
     };
@@ -27,7 +30,7 @@ const Header = () => {
   return (
     <>
       <Helmet>
-      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
+        <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>Inicio - Piezas de Metal, Piezas de Futuro | Mind</title>
         <meta
           name="description"
@@ -41,11 +44,23 @@ const Header = () => {
 
       <header className="header">
         <div className="video-container">
-          <video autoPlay loop muted playsInline className="video-background desktop-video">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="video-background desktop-video"
+          >
             <source src="/images/video-horizontal.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <video autoPlay loop muted playsInline className="video-background mobile-video">
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="video-background mobile-video"
+          >
             <source src="/images/video-vertical.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -54,7 +69,10 @@ const Header = () => {
           <div className="header-text">
             <h1>Mind</h1>
             <p>Más de 30 años realizando proyectos metálicos a tu medida</p>
-            <button className="btn-primary">Contáctanos</button>
+            {/* Cambiar <button> por <a> para redirección */}
+            <a href="/contactenos" className="btn-primary">
+              Contáctanos
+            </a>
           </div>
           <div className="logo-background">
             <img src="/images/12.png" alt="Logo" className="logo" />

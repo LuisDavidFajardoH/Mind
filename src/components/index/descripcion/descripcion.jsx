@@ -6,12 +6,7 @@ import './descripcion.css';
 const Descripcion = () => {
   return (
     <>
-      <Helmet>
-      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
-        <title>Descripción - Calidad, Fabricación y Diseño | Mi Empresa</title>
-        <meta name="description" content="Conozca más sobre nuestros estándares de calidad, capacidad de fabricación y soluciones de diseño personalizadas en Mi Empresa." />
-        <meta name="keywords" content="Calidad, Fabricación, Diseño, ISO 9001:2015, Bureau Veritas Certification" />
-      </Helmet>
+      
       <div className="descripcion-container">
         <div className="certificacion">
           <img className="imagen1" src="/images/certificacion-veritas.png" alt="Certificación BUREAU VERITAS" />
