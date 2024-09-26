@@ -25,7 +25,7 @@ const ContactUs = () => {
       <Navbar />
       <HeaderPagina titulo="Contacto" imagenFondo="contactenos.jpg" />
       <div className="contact-us-container">
-        <h1 className="greeting">Hola</h1>
+        <h1 className="greeting">¡Hola!</h1>
         <p className="description" style={{alignItems:""}} >
           En MIND SAS BIC, con más de 25 años de experiencia en el sector metalmecánico colombiano, 
           diseñamos y desarrollamos soluciones a partir de sus necesidades. Con una capacidad 

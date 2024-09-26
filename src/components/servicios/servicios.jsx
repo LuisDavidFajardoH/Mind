@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../navbar/navbar.jsx";
 import Footer from "../index/footer/footer.jsx";
 import BotonWhatsapp from "../index/boton-whatsapp/boton-whatsapp.jsx";
@@ -8,46 +8,67 @@ import "./servicios.css";
 import HeaderPagina from "../header-pagina/header-pagina.jsx";
 import { ArrowRight } from "akar-icons";
 import { Helmet } from "react-helmet";
+import Modal from "react-modal";
 
 // Importa el archivo PDF
-import recomendacionesPDF from './Recomendaciones.pdf';
+import recomendacionesPDF from "./Recomendaciones.pdf";
+
+Modal.setAppElement("#root"); // Configuración necesaria para accesibilidad
 
 const services = [
   {
     icon: "/images/servicio-diseno.jpg",
+    modalIcon: "/images/disenamosModal.jpg", // Nueva imagen para el modal
     title: "Diseño",
     description:
-      "Realizamos cualquier tipo de diseño en metal, adaptado a tus necesidades y requerimientos.",
+      "Ofrecemos un servicio de diseño personalizado que se adapta perfectamente a sus requerimientos.",
+    modalDescription:
+      "En Mind SAS BIC, entendemos que cada proyecto es único. Por eso, ofrecemos un servicio de diseño personalizado que se adapta perfectamente a sus requerimientos. Desde la idea inicial hasta el producto final, trabajamos con usted para crear soluciones de alta calidad que superen sus expectativas. ¡Cotice con nosotros y transformemos su visión en realidad con precisión y dedicación!",
   },
   {
     icon: "/images/servicio-corte.jpg",
-    title: "Corte",
+    modalIcon: "/images/corteModal.jpg", // Nueva imagen para el modal
+    title: "Corte de lámina",
     description:
-      "Realizamos cortes precisos con tecnología de última generación para diferentes materiales.",
+      "Realizamos cortes de lámina de alta calidad con precisión y eficiencia, garantizando resultados excepcionales para su proyecto.",
+    modalDescription:
+      "En Mind SAS BIC ofrecemos cortes de lámina que superan sus expectativas. Nuestra maquinaria de vanguardia y nuestro equipo de expertos trabajan para garantizar que cada corte sea preciso. No importa el tamaño de su proyecto, nosotros lo hacemos realidad con rigor y perfección. ¡Confíe en nosotros para llevar sus ideas al siguiente nivel!",
   },
   {
     icon: "/images/servicio-punzado.jpg",
+    modalIcon: "/images/punzadaModal.webp", // Nueva imagen para el modal
     title: "Punzonado",
     description:
-      "Ofrecemos servicios de punzonado con alta precisión y eficiencia.",
+      "Expertos en punzonado de metal con tecnología avanzada para perforaciones precisas y eficientes.",
+    modalDescription:
+      "En Mind SAS BIC, somos expertos en el punzonado de metal, un proceso que realizamos con la más alta tecnología y precisión. Nuestro servicio de punzonado asegura perforaciones exactas. ¡Cotice con nosotros y descubra cómo nuestra experiencia puede marcar la diferencia en la calidad y eficiencia de su producción!",
   },
   {
     icon: "/images/servicio-doblado.jpg",
+    modalIcon: "/images/dobladoModal.jpg", // Nueva imagen para el modal
     title: "Doblado",
     description:
-      "Servicios de doblez y curvado de materiales con geometrías de diferentes características.",
+      "Ejecutamos el doblez de láminas con precisión milimétrica y atención al detalle, garantizando resultados excepcionales.",
+    modalDescription:
+      "En Mind SAS BIC, el doblez de lámina es un proceso que ejecutamos con precisión milimétrica y atención al detalle. Nuestro equipo de expertos se asegura de que cada pliegue y curva se realicen con exactitud, garantizando que su proyecto no solo cumpla, sino que supere sus expectativas. Ya sea para piezas simples o complejas, nuestro servicio se adapta a sus necesidades.",
   },
   {
     icon: "/images/servicio-soldadura.jpg",
+    modalIcon: "/images/ingenieria.jpg", // Nueva imagen para el modal
     title: "Soldadura",
     description:
-      "Ofrecemos procesos MIG, TIG, Punto, ajustado a la aplicación de materiales y fabricaciones requeridos.",
+      "Ofrecemos un servicio de soldadura que combina experiencia, precisión y tecnología de vanguardia para asegurar uniones fuertes y duraderas.",
+    modalDescription:
+      "En Mind SAS BIC, ofrecemos un servicio de soldadura que combina experiencia, precisión y tecnología de vanguardia para asegurar uniones fuertes y duraderas en cada proyecto. Entendemos que cada cliente tiene requerimientos únicos, por lo que nos especializamos en adaptar nuestros procesos para cumplir con sus especificaciones exactas, garantizando la máxima calidad en cada soldadura.",
   },
   {
     icon: "/images/servicio-acabado.jpg",
-    title: "Acabado",
+    modalIcon: "/images/acabadosModal.jpg", // Nueva imagen para el modal
+    title: "Acabados",
     description:
-      "Nuestros acabados se llevan a cabo usando pintura electrostática mediante un horno de 6,00 mts x 1,80 mts de alto x 1,35 mts de ancho, para un toque final perfecto.",
+      "Nos especializamos en ofrecer acabados de alta calidad que no solo protegen, sino que también realzan la estética de sus productos.",
+    modalDescription:
+      "En Mind SAS BIC, nos especializamos en ofrecer acabados de alta calidad que no solo protegen, sino que también realzan la estética de sus productos. Nuestro proceso incluye la aplicación de pintura electrostática, una técnica avanzada que garantiza una cobertura uniforme, duradera y resistente a la corrosión.",
   },
 ];
 
@@ -91,6 +112,9 @@ const materials = [
 ];
 
 const ServiciosComponent = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -100,23 +124,32 @@ const ServiciosComponent = () => {
     });
   }, []);
 
+  const openModal = (service) => {
+    setSelectedService(service);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+    setSelectedService(null);
+  };
+
   return (
     <>
       <Helmet>
-      <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
+        <link rel="icon" href="/images/MIND.ico" type="image/x-icon" />
         <title>
           Servicios y Materiales - Mind SAS BIC | Innovación en Metalmecánica
         </title>
         <meta
           name="description"
-          content="Descubre los servicios y materiales que ofrecemos en Mind SAS BIC. Desde diseño y corte hasta punzado, doblado, soldadura y acabados. Trabajamos con láminas, perfiles, acero, hierro, aluminio y más."
+          content="Descubre los servicios y materiales que ofrecemos en Mind SAS BIC..."
         />
         <meta
           name="keywords"
-          content="Mind SAS BIC, servicios metalmecánicos, diseño de metal, corte de metal, punzado, doblado, soldadura MIG, soldadura TIG, acabados, pintura, láminas de metal, perfiles de metal, acero, hierro, aluminio, transformación de metales"
+          content="Mind SAS BIC, servicios metalmecánicos, diseño de metal, corte de metal, etc."
         />
       </Helmet>
-
       <Navbar />
       <HeaderPagina
         titulo="Nuestros Servicios"
@@ -131,6 +164,7 @@ const ServiciosComponent = () => {
               key={index}
               data-aos="fade-up"
               data-aos-delay={`${index * 100}`}
+              onClick={() => openModal(service)}
             >
               <div className="flip-card-inner">
                 <div className="flip-card-front">
@@ -181,6 +215,45 @@ const ServiciosComponent = () => {
           </a>
         </div>
       </div>
+
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={closeModal}
+        contentLabel="Información del Servicio"
+        className="modal"
+        overlayClassName="overlay"
+      >
+        {selectedService && (
+          <div className="modal-content">
+            <div className="modal-header">
+              <h2 style={{ color: "white" }}>{selectedService.title}</h2>
+            </div>
+            <div className="modal-body">
+              <div style={{ marginRight: "5%" }} className="modal-image">
+                <img
+                  style={{
+                    maxWidth: "100%",
+                    height: "auto",
+                    maxHeight: "136px",
+                    borderRadius: "8px",
+                  }}
+                  src={selectedService.modalIcon}
+                  alt={selectedService.title}
+                />
+              </div>
+              <p>{selectedService.modalDescription}</p>
+            </div>
+            <div className="modal-footer">
+              <p className="modal-cta">
+                ¡Cotice hoy y vea cómo nuestros servicios de calidad pueden
+                llevar su proyecto al siguiente nivel!
+              </p>
+              <button onClick={closeModal}>Cerrar</button>
+            </div>
+          </div>
+        )}
+      </Modal>
+
       <BotonWhatsapp />
       <Footer />
     </>

@@ -3,7 +3,7 @@ import "./plantilla-proyecto.css";
 import PlantillaCarrusel from "./plantilla-carrusel/plantilla-carrusel";
 
 function PlantillaProyecto(props) {
-    const {portada, titulo, descripcion, imagen1, imagen2, imagen3, imagen4, resetKey} = props;
+    const {portada, titulo, descripcion, imagen1, imagen2, imagen3, imagen4,imagen5,imagen6,imagen7, resetKey} = props;
     const [isFlipped, setIsFlipped] = useState(false);
     const [containerHeight, setContainerHeight] = useState('420px');
     const backRef = useRef(null);
@@ -44,6 +44,9 @@ function PlantillaProyecto(props) {
                                 imagen2={imagen2}
                                 imagen3={imagen3}
                                 imagen4={imagen4}
+                                imagen5={imagen5}
+                                imagen6={imagen6}
+                                imagen7={imagen7}
                                 titulo={titulo}
                             />
                         </div>

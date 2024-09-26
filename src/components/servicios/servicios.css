@@ -113,45 +113,160 @@
   transform-origin: center;
 }
 
-.pdf-button-center {
-  margin-top: 60px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
+/* Modal Styles */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 563px;
+  width: 100%;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }
 
-.pdf-button {
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+}
+
+.modal-content {
   background-color: #006278;
-  color: #ffffff;
-  padding: 20px 20px;
-  border-radius: 5px;
-  border: none;
-  transition: background-color 0.3s, color 0.3s;
+  border-radius: 10px;
+  color: white;
+  padding: 20px;
+}
+
+.modal-title {
+  color: white;
+  font-size: 1.8em;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.modal-body {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 17px;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  max-width: 100%;
+}
+
+.modal-icon {
+  flex: 0 0 25%;
+  margin-right: 20px;
+}
+
+.modal-icon img {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.modal-body p {
+  flex: 1;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.modal-footer {
+  text-align: center;
+}
+
+.modal-footer p {
+  font-style: italic;
+  margin-bottom: 15px;
+  font-size: 0.9em;
+}
+
+.modal-footer button {
+  background-color: white;
+  color: #006278;
+  border: none;
+  padding: 10px 25px;
   cursor: pointer;
-  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.pdf-button:hover {
-  background-color: #00404e;
+.modal-footer button:hover {
+  background-color: #004e5f;
+  color: white;
 }
 
+/* Media Queries */
+/* Media Queries */
 @media screen and (max-width: 1024px) {
   .services-grid, .materials-grid {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    max-width: calc(240px * 2 + 40px * 2); /* Ajusta el ancho máximo */
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 80%;
   }
-  
+
+  .flip-card {
+    margin-bottom: 30px; /* Añadir margen inferior entre tarjetas */
+  }
+
+  .modal {
+    max-width: 80%;
+  }
+
+  .modal-body {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-icon {
+    margin-right: 0;
+    margin-bottom: 10px; /* Reducir el margen inferior para acercar la imagen al texto */
+    margin-top: -10px; /* Subir la imagen en el modal */
+    width: 50%;
+  }
+
+  .modal-body p {
+    text-align: center;
+    margin-top: 17px;
+
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .section-title {
-    font-size: 1.6em;
+  .services-grid, .materials-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .flip-card {
+    margin-bottom: 30px; /* Añadir margen inferior entre tarjetas */
+  }
+
+  .modal {
+    max-width: 90%;
+  }
+
+  .modal-body p {
+    font-size: 0.8em;
+    margin-top: 17px;
+
+  }
+
+  .modal-icon {
+    margin-right: 0;
+    margin-bottom: 10px; /* Reducir el margen inferior para acercar la imagen al texto */
+    margin-top: -10px; /* Subir la imagen en el modal */
+    width: 50%;
   }
 
   .pdf-button {

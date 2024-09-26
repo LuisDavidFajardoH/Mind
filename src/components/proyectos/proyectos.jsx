@@ -252,6 +252,75 @@ const Proyectos = () => {
       imagen4: "images/24.4 TOBOGAN INOX DE GUIA SALIDA.png",
       categoria: "guardas"
     },
+
+    {
+      titulo: "Brackets Traga Moneda",
+      portada: "images/25.1 BRACKETS TRAGA MONEDA.png",
+      descripcion: "Los *Brackets Traga Moneda* son soportes metálicos utilizados en las máquinas tragamonedas. Su función principal es mantener en su lugar los componentes internos, como los rodillos y mecanismos de pago, asegurando el correcto funcionamiento de la máquina. Fabricados generalmente de acero, son esenciales para la durabilidad y resistencia del equipo.",
+      imagen1: "images/25.1 BRACKETS TRAGA MONEDA.png",
+      imagen2: "images/25.2 BRACKETS TRAGA MONEDA.png",
+      imagen3: "images/25.3 BRACKETS TRAGA MONEDA.png",
+      imagen4: "images/25.4 BRACKETS TRAGA MONEDA.png",
+      imagen5: "images/25.5 BRACKETS TRAGA MONEDA.png",
+      imagen6: "images/25.6 BRACKETS TRAGA MONEDA.png",
+      imagen7: "images/25.7 BRACKETS TRAGA MONEDA.png",
+      categoria: "frontales"
+    },
+
+    {
+      titulo: "Brackets Tec Gem",
+      portada: "images/26.1 BRACKETS TEC GM.png",
+      descripcion: "Los Brackets Tec Gem son soportes metálicos diseñados específicamente para aplicaciones industriales, como en sistemas de montaje o estructuras de soporte. Son conocidos por su precisión y resistencia, lo que los hace ideales para ensamblajes que requieren estabilidad y durabilidad. Estos brackets suelen estar fabricados en acero inoxidable u otras aleaciones de alta resistencia, asegurando un rendimiento óptimo en entornos exigentes.",
+      imagen1: "images/26.1 BRACKETS TEC GM.png",
+      imagen2: "images/26.2 BRACKETS TEC GM.png",
+      imagen3: "images/26.3 BRACKETS TEC GM.png",
+      imagen4: "images/26.4 BRACKETS TEC GM.png",
+      categoria: "frontales"
+    },
+
+    {
+      titulo: "Soporte en U",
+      portada: "images/27.1 SOPORTE EN U.png",
+      descripcion: "El Soporte en U es una pieza metálica con forma de U utilizada para fijar y asegurar tuberías, cables u otros componentes en su lugar. Es común en instalaciones eléctricas y de fontanería.",
+      imagen1: "images/27.1 SOPORTE EN U.png",
+      imagen2: "images/27.2 SOPORTE EN U.png",
+      imagen3: "images/27.3 SOPORTE EN U.png",
+      imagen4: "images/27.4 SOPORTE EN U.png",
+      categoria: "soportes"
+    },
+
+    {
+      titulo: "Guardacople",
+      portada: "images/28.1 GUARDACOPLE.png",
+      descripcion: "Guarda en acero inoxidable, que permite la conexión y/o salida de productos entre bandas de alimentación",
+      imagen1: "images/28.1 GUARDACOPLE.png",
+      imagen2: "images/28.2 GUARDACOPLE.png",
+      imagen3: "images/28.3 GUARDACOPLE.png",
+      imagen4: "images/28.4 GUARDACOPLE.png",
+      categoria: "guardas"
+    },
+
+    {
+      titulo: "Bandeja Punzonado",
+      portada: "images/29.1 BANDEJA PUNZONADO.png",
+      descripcion: "El Guardacople es una cubierta protectora que se utiliza para envolver y proteger los acoples de maquinaria, evitando daños y garantizando la seguridad operativa al prevenir el contacto con partes móviles.",
+      imagen1: "images/29.1 BANDEJA PUNZONADO.png",
+      imagen2: "images/29.2 BANDEJA PUNZONADO.png",
+      imagen3: "images/29.3 BANDEJA PUNZONADO.png",
+      imagen4: "images/29.4 BANDEJA PUNZONADO.png",
+      categoria: "soportes"
+    },
+    {
+      titulo: "Base Estructural",
+      portada: "images/30.1 BASE ESTRUCTURAL.png",
+      descripcion: "La Base Estructural es el componente de soporte principal en una estructura, diseñado para distribuir cargas y proporcionar estabilidad a toda la construcción. Es esencial para garantizar la integridad y resistencia del ensamblaje.",
+      imagen1: "images/30.1 BASE ESTRUCTURAL.png",
+      imagen2: "images/30.2 BASE ESTRUCTURAL.png",
+      imagen3: "images/30.3 BASE ESTRUCTURAL.png",
+      imagen4: "images/30.4 BASE ESTRUCTURAL.png",
+      categoria: "soportes"
+    }
+
   ];
 
   const filteredProyectos = filter === "todos" ? proyectos : proyectos.filter(proyecto => proyecto.categoria === filter);
@@ -286,9 +355,10 @@ const Proyectos = () => {
             <button onClick={() => handleFilterChange("muebles")} className={filter === "muebles" ? "active" : ""}>Muebles</button>
             <button onClick={() => handleFilterChange("gabinetes")} className={filter === "gabinetes" ? "active" : ""}>Gabinetes</button>
             <button onClick={() => handleFilterChange("guardas")} className={filter === "guardas" ? "active" : ""}>Guardas</button>
-            <button onClick={() => handleFilterChange("soportes")} className={filter === "soportes" ? "active" : ""}>Soportes</button>
+            <button onClick={() => handleFilterChange("soportes")} className={filter === "soportes" ? "active" : ""}>Soportes y Bases</button>
             <button onClick={() => handleFilterChange("equipos_especializados")} className={filter === "equipos_especializados" ? "active" : ""}>Equipos Especializados</button>
             <button onClick={() => handleFilterChange("proteccion")} className={filter === "proteccion" ? "active" : ""}>Protección</button>
+            <button onClick={() => handleFilterChange("frontales")} className={filter === "frontales" ? "active" : ""}>Frontales</button> 
           </div>
           <div className="imagenes-proyectos">
             {filteredProyectos.map((proyecto, index) => (
