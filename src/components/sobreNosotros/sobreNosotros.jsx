@@ -10,6 +10,7 @@ import "./SobreNosotros.css";
 // Importa los archivos PDF
 import reporte2022 from './BIC_2022.pdf';
 import reporte2023 from './REPORTE_BIC_2023.pdf';
+import reporte2024 from './REPORTE BIC 2024.pdf';
 
 const SobreNosotros = () => {
   return (
@@ -83,6 +84,9 @@ const SobreNosotros = () => {
               </a>
               <a href={reporte2023} target="_blank" rel="noopener noreferrer">
                 <FaFileDownload /> REPORTE 2023
+              </a>
+              <a href={reporte2024} target="_blank" rel="noopener noreferrer">
+                <FaFileDownload /> REPORTE 2024
               </a>
             </div>
           </section>
