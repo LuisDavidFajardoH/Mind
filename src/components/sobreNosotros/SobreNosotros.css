@@ -209,4 +209,20 @@
     flex: 1 1 100%;
     max-width: 100%;
   }
+
+  .reporte-bic-buttons {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .reporte-bic-buttons a {
+    flex: 0 0 calc(50% - 10px);
+    box-sizing: border-box;
+  }
+
+  .reporte-bic-buttons a:last-child {
+    flex: 0 0 45%;
+    margin: 15px auto 0;
+  }
 }
