@@ -1,8 +1,33 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
 import "./Header.css";
 
 const Header = () => {
+  const [videoSrcDesktop, setVideoSrcDesktop] = useState(null);
+  const [videoSrcMobile, setVideoSrcMobile] = useState(null);
+  const videoContainerRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setVideoSrcDesktop("/images/video-horizontal.mp4");
+            setVideoSrcMobile("/images/video-vertical.mp4");
+            observer.disconnect(); // Stop observing once loaded
+          }
+        });
+      },
+      { threshold: 0.1 } // Load when 10% visible
+    );
+
+    if (videoContainerRef.current) {
+      observer.observe(videoContainerRef.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
   useEffect(() => {
     const videoDesktop = document.querySelector(".desktop-video");
     const videoMobile = document.querySelector(".mobile-video");
@@ -25,7 +50,7 @@ const Header = () => {
         videoMobile.removeEventListener("error", handleVideoError);
       }
     };
-  }, []);
+  }, [videoSrcDesktop, videoSrcMobile]);
 
   return (
     <>
@@ -43,7 +68,7 @@ const Header = () => {
       </Helmet>
 
       <header className="header">
-        <div className="video-container">
+        <div className="video-container" ref={videoContainerRef}>
           <video
             autoPlay
             loop
@@ -51,7 +76,7 @@ const Header = () => {
             playsInline
             className="video-background desktop-video"
           >
-            <source src="/images/video-horizontal.mp4" type="video/mp4" />
+            {videoSrcDesktop && <source src={videoSrcDesktop} type="video/mp4" />}
             Your browser does not support the video tag.
           </video>
           <video
@@ -61,7 +86,7 @@ const Header = () => {
             playsInline
             className="video-background mobile-video"
           >
-            <source src="/images/video-vertical.mp4" type="video/mp4" />
+            {videoSrcMobile && <source src={videoSrcMobile} type="video/mp4" />}
             Your browser does not support the video tag.
           </video>
         </div>
