@@ -14,7 +14,7 @@ function PlantillaCarrusel(props) {
             className="carrusel-container"
         >
             <Slider>
-                <Slide index={0}><img src={imagen1} alt={titulo} style={{width: '100%', height: '100%', objectFit: 'cover'}} /></Slide>
+                <Slide index={0}><img src={imagen1} alt={titulo} style={{width: '100%', height: '100%', objectFit: 'cover'}} loading="lazy" /></Slide>
                 <Slide index={1}><img src={imagen2} alt={titulo} style={{width: '100%', height: '100%', objectFit: 'cover'}} /></Slide>
                 <Slide index={2}><img src={imagen3} alt={titulo} style={{width: '100%', height: '100%', objectFit: 'cover'}} /></Slide>
                 <Slide index={3}><img src={imagen4} alt={titulo} style={{width: '100%', height: '100%', objectFit: 'cover'}} /></Slide>

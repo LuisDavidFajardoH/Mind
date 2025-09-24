@@ -32,7 +32,7 @@ const ContactUs = () => {
           productiva avanzada y un sistema de gestión de calidad certificado según la ISO 9001:2015 
           por Bureau Veritas Certification, estamos listos para transformar sus ideas en realidad.
         </p>
-        <img src="/images/contactanos.jpg" alt="Imagen descriptiva" className="descriptive-image" />
+        <img src="/images/contactanos.jpg" alt="Imagen descriptiva" className="descriptive-image" loading="lazy" />
         <Separator />
         <div className="cta">
           <button className="cta-buttonC" onClick={handleButtonClick}>Empecemos</button>
@@ -57,6 +57,7 @@ const ContactUs = () => {
             alt="Mapa"
             className="map-image"
             onClick={handleMapClick}
+            loading="lazy"
           />
         </div>
       </div>

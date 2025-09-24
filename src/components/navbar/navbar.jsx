@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-logo">
-          <img src="/images/45+.png" alt="Logo" />
+          <img src="/images/45+.png" alt="Logo" loading="lazy" />
         </div>
         <div className="menu-toggle" onClick={toggleMenu}>
           {menuOpen ? <Cross size={24} color='white' /> : <ThreeLineHorizontal strokeWidth={2} size={36} color='white' />}

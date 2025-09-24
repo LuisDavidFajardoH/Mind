@@ -41,6 +41,7 @@ const SobreNosotros = () => {
             className="side-image"
             src="/images/x.jpg"
             alt="Imagen lateral izquierda"
+            loading="lazy"
           />
           <section className="sobrenosotros-info">
             <h2>Sobre Nosotros</h2>
@@ -71,6 +72,7 @@ const SobreNosotros = () => {
               className="logo-bic"
               src="/images/bicAzul.png"
               alt="Logo BIC"
+              loading="lazy"
             />
             <h2>Reporte BIC</h2>
             <p>
@@ -94,23 +96,24 @@ const SobreNosotros = () => {
             className="side-image"
             src="/images/z.jpg"
             alt="Imagen lateral derecha"
+            loading="lazy"
           />
         </div>
         <section className="sobrenosotros-reconocimiento">
           <h2 className="reconocimiento-titulo">En Reconocimiento a su Legado, Trabajo y Compromiso</h2>
           <div className="reconocimiento-grid">
             <div className="reconocimiento-item">
-              <img src="/images/imagen-abuela.jpeg" alt="María Rosalba Acevedo" />
+              <img src="/images/imagen-abuela.jpeg" alt="María Rosalba Acevedo" loading="lazy" />
               <h1>María Rosalba Acevedo</h1>
               <p>Fundadora</p>
             </div>
             <div className="reconocimiento-item">
-              <img src="/images/imagen-papa.jpg" alt="Hernando Sánchez" />
+              <img src="/images/imagen-papa.jpg" alt="Hernando Sánchez" loading="lazy" />
               <h1>Hernando Sánchez</h1>
               <p>Colaborador</p>
             </div>
             <div className="reconocimiento-item">
-              <img src="/images/imagen-mama.jpg" alt="Gabriela Rueda Acevedo" />
+              <img src="/images/imagen-mama.jpg" alt="Gabriela Rueda Acevedo" loading="lazy" />
               <h1>Gabriela Rueda Acevedo</h1>
               <p>Directora junta directíva</p>
             </div>

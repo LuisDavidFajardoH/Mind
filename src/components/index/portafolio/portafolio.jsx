@@ -25,16 +25,19 @@ const Portafolio = () => {
               src={"images/6.1 MUEBLE PORTA HERRAMIENTAS.png"}
               alt="MUEBLE PORTA HERRAMIENTAS"
               className="proyecto-imagen"
+              loading="lazy"
             />
             <img
               src={"images/5.1 ESCALERA PLATAFORMA.png"}
               alt="ESCALERA PLATAFORMA"
               className="proyecto-imagen"
+              loading="lazy"
             />
             <img
               src={"images/3.2 ESCALERA TIPO GATO.png"}
               alt="ESCALERA TIPO GATO"
               className="proyecto-imagen"
+              loading="lazy"
             />
           </div>
           <div className="briefcase-button-center">

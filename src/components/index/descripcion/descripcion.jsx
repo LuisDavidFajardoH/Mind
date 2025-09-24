@@ -9,7 +9,7 @@ const Descripcion = () => {
       
       <div className="descripcion-container">
         <div className="certificacion">
-          <img className="imagen1" src="/images/certificacion-veritas.png" alt="Certificación BUREAU VERITAS" />
+          <img className="imagen1" src="/images/certificacion-veritas.png" alt="Certificación BUREAU VERITAS" loading="lazy" />
         </div>
         <div className="descripcion">
           <div className="caracteristica">

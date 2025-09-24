@@ -108,6 +108,7 @@ const Informacion = () => {
             src={"images/logo.png"}
             alt="Nuestra Empresa"
             className="content-image"
+            loading="lazy"
           />
         </div>
       </div>

@@ -31,7 +31,7 @@ function PlantillaProyecto(props) {
                 <div className="card-proyecto-front">
                     <h3>{titulo}</h3>
                     <div className="card-proyecto-image-container">
-                        <img className="card-proyecto-image" src={portada} alt={titulo}/>
+                        <img className="card-proyecto-image" src={portada} alt={titulo} loading="lazy"/>
                     </div>
                     <button className="flip-button" onClick={handleFlip}>Ver más</button>
                 </div>

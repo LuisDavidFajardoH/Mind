@@ -118,6 +118,7 @@ const Diseno = () => {
                 src={feature.image}
                 alt={feature.title}
                 className="feature-image"
+                loading="lazy"
               />
             </div>
           ))}

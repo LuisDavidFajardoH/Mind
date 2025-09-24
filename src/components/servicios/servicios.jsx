@@ -172,6 +172,7 @@ const ServiciosComponent = () => {
                     className="icon"
                     src={service.icon}
                     alt={service.title}
+                    loading="lazy"
                   />
                   <h3 className="service-title">{service.title}</h3>
                 </div>
@@ -198,6 +199,7 @@ const ServiciosComponent = () => {
                     className="icon"
                     src={material.icon}
                     alt={material.title}
+                    loading="lazy"
                   />
                   <h3 className="material-title">{material.title}</h3>
                 </div>
@@ -239,6 +241,7 @@ const ServiciosComponent = () => {
                   }}
                   src={selectedService.modalIcon}
                   alt={selectedService.title}
+                  loading="lazy"
                 />
               </div>
               <p>{selectedService.modalDescription}</p>
